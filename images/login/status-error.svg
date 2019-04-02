@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
+    <g fill="#D6191E" fill-rule="evenodd">
+        <text font-family="PingFangTC-Regular, PingFang TC" font-size="11">
+            <tspan x="6" y="12">!</tspan>
+        </text>
+        <path fill-rule="nonzero" d="M13.55 14.318H2.263a2.263 2.263 0 0 1-1.957-3.392l5.637-9.774a2.258 2.258 0 0 1 3.913 0l5.646 9.778a2.263 2.263 0 0 1-1.957 3.392l.005-.004zM7.904.663a1.6 1.6 0 0 0-1.399.809L.86 11.25a1.618 1.618 0 0 0 1.4 2.428h11.286a1.618 1.618 0 0 0 1.399-2.428L9.298 1.472a1.6 1.6 0 0 0-1.394-.81z"/>
+    </g>
+</svg>
