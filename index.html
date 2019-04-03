@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__logo"><img src="./images/logo.png" alt="AHDA Logo"></div>
+    <div class="header__logo"><a href="/"><img src="./images/logo.png" alt="AHDA Logo"></a></div>
     <div class="header__search"><span><input type="search" name="" id="" placeholder="2019屏東燈會"><button type="submit"><img src="./images/icons/search.svg" alt=""></button></span></div>
     <nav class="header__navbar">
       <ul>
@@ -19,7 +19,23 @@
     </nav>
   </header>
   <!-- .header end -->
-  <section class="carousel"></section>
+  <section class="carousel">
+    <div>
+      <div class="carousel__action carousel__action__previous"><img src="./images/icons/left-direction.svg" alt="上一張"></div>
+      <div class="carousel__photos">
+        <img src="https://fakeimg.pl/1060x500/" />
+        <div class="carousel__photos__index">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="carousel__action carousel__action__next"><img src="./images/icons/right-direction.svg" alt="下一張"></div>
+    </div>
+  </section>
   <section class="activity">
       <section class="activity__location__filter"></section>
     <section class="activity__categories__filter"></section>

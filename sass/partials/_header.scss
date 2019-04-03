@@ -27,7 +27,6 @@
     flex-basis: 75%;
     max-width: 1060px;
     text-align: right;
-    padding-right: 20px;
     span {
       box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
       display: inline-flex;
@@ -50,6 +49,7 @@
       border: none;
       outline: none;
       border-radius: 50px;
+      cursor: pointer;
     }
   }
   &__navbar {
@@ -59,7 +59,8 @@
     ul {
       list-style-type: none;
       display: flex;
-      padding: 0 0 0 8px;
+      justify-content: flex-start;
+      padding: 0 0 0 18px;
       margin: 0;
       li + li {
         margin-left: 12px;

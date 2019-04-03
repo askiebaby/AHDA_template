@@ -1,0 +1,49 @@
+.carousel {
+  position: relative;
+  text-align: center;
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__action {
+    cursor: pointer;
+    &__previous {
+      padding-right: 14px;
+    }
+    &__next {
+      padding-left: 14px;
+    }
+  }
+  &__photos {
+    position: relative;
+    font-size: 0;
+    img {
+      max-width: 100%;
+    }
+
+    &__index {
+      position: absolute;
+      bottom: 17px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        border: 1px solid $white;
+        background: transparent;
+        cursor: pointer;
+        &.active {
+          background: $white;
+        }
+      }
+
+      .dot + .dot {
+        margin-left: 7px;
+      }
+    }
+  }
+}

@@ -352,8 +352,7 @@ a {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 1060px;
-    text-align: right;
-    padding-right: 20px; }
+    text-align: right; }
     .header__search span {
       -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
       box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
@@ -380,7 +379,8 @@ a {
     .header__search button[type="submit"] {
       border: none;
       outline: none;
-      border-radius: 50px; }
+      border-radius: 50px;
+      cursor: pointer; }
   .header__navbar {
     -ms-flex-preferred-size: 12.5%;
     flex-basis: 12.5%;
@@ -391,7 +391,10 @@ a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding: 0 0 0 8px;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      padding: 0 0 0 18px;
       margin: 0; }
       .header__navbar ul li + li {
         margin-left: 12px; }
@@ -399,5 +402,51 @@ a {
         color: #484848;
         padding: 5px 10px;
         font-size: 15px; }
+
+.carousel {
+  position: relative;
+  text-align: center; }
+  .carousel > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .carousel__action {
+    cursor: pointer; }
+    .carousel__action__previous {
+      padding-right: 14px; }
+    .carousel__action__next {
+      padding-left: 14px; }
+  .carousel__photos {
+    position: relative;
+    font-size: 0; }
+    .carousel__photos img {
+      max-width: 100%; }
+    .carousel__photos__index {
+      position: absolute;
+      bottom: 17px;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .carousel__photos__index .dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        background: transparent;
+        cursor: pointer; }
+        .carousel__photos__index .dot.active {
+          background: #ffffff; }
+      .carousel__photos__index .dot + .dot {
+        margin-left: 7px; }
 
 
