@@ -307,4 +307,97 @@ template {
 [hidden] {
   display: none; }
 
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 0;
+  max-width: 1440px;
+  margin: auto;
+  border-bottom: 1px solid #ddd; }
+  .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-preferred-size: 12.5%;
+    flex-basis: 12.5%;
+    min-width: 190px;
+    padding-left: 16px; }
+    .header__logo img {
+      max-width: 100%; }
+  .header__search {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 1060px;
+    text-align: right;
+    padding-right: 20px; }
+    .header__search span {
+      -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      border-radius: 13px;
+      padding-left: 5px;
+      padding-right: 5px; }
+    .header__search input[type="search"] {
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      color: #7a7a7a;
+      font-size: 14px;
+      padding: 5px;
+      width: 139px; }
+    .header__search button[type="submit"] {
+      border: none;
+      outline: none;
+      border-radius: 50px; }
+  .header__navbar {
+    -ms-flex-preferred-size: 12.5%;
+    flex-basis: 12.5%;
+    min-width: 190px;
+    text-align: right; }
+    .header__navbar ul {
+      list-style-type: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0 0 0 8px;
+      margin: 0; }
+      .header__navbar ul li + li {
+        margin-left: 12px; }
+      .header__navbar ul a {
+        color: #484848;
+        padding: 5px 10px;
+        font-size: 15px; }
+
 
