@@ -1,0 +1,16 @@
+@import '../modules/menu';
+
+.activity {
+  padding: 42px 0;
+  max-width: 1060px;
+  margin: auto;
+
+  &__location {
+
+  }
+  &__categories {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__liar{}
+}
