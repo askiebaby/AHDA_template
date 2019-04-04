@@ -12,6 +12,12 @@
   max-width: 1440px;
   margin: auto;
   border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: $white;
 
   &__logo {
     display: flex;

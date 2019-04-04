@@ -311,8 +311,20 @@ template {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  background-color: #02bad3; }
+  body > section {
+    background-color: #ffffff; }
+
+h1, h2, h3, h4, p {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 a {
   text-decoration: none; }
+
+img {
+  max-width: 100%; }
 
 .header {
   display: -webkit-box;
@@ -334,7 +346,13 @@ a {
   padding: 8px 0;
   max-width: 1440px;
   margin: auto;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #ffffff; }
   .header__logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -406,7 +424,8 @@ a {
 
 .carousel {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  margin-top: 59px; }
   .carousel > div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -539,16 +558,101 @@ a {
       background: url(../../images/icons/food-white.svg) no-repeat center bottom 36px #02bad3;
       background-size: 27px; }
 
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .cards .card {
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 7px;
+    max-width: 340px; }
+    .cards .card__photo {
+      font-size: 0; }
+      .cards .card__photo img {
+        border-radius: 7px 7px 0 0; }
+    .cards .card__content {
+      padding: 14px 18px 10px 18px; }
+      .cards .card__content__title {
+        margin-bottom: 15px;
+        font-size: 15px;
+        line-height: 1.25;
+        min-height: 2.5em;
+        color: #484848;
+        text-align: left; }
+      .cards .card__content__description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .cards .card__content__description > p {
+          font-size: 0;
+          padding-left: 15px; }
+          .cards .card__content__description > p > span {
+            font-size: 12px;
+            vertical-align: middle;
+            color: #484848;
+            white-space: nowrap;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            width: 100%;
+            display: inline-block; }
+          .cards .card__content__description > p > img {
+            height: 12px;
+            margin-right: 3px;
+            vertical-align: middle; }
+      .cards .card__content__date {
+        background: url(../../images/icons/calendar.svg) no-repeat left center;
+        background-size: 11px; }
+      .cards .card__content__country {
+        background: url(../../images/icons/mark-solid.svg) no-repeat left center;
+        background-size: 10px; }
+      .cards .card__content__location {
+        background: url(../../images/icons/star.svg) no-repeat left center;
+        background-size: 12px;
+        max-width: 33.33333%; }
+  .cards .card + .card {
+    margin-left: 15px; }
+
+.button {
+  background: #fff; }
+  .button--primary {
+    border: solid 1px #02bad3;
+    color: #02bad3;
+    padding: 4px 32px 4px 14px;
+    font-size: 15px; }
+
 .activity {
   padding: 42px 0;
-  max-width: 1060px;
-  margin: auto; }
+  text-align: center; }
+  .activity > * {
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto; }
   .activity__categories {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 48px; }
+  .activity__list {
+    margin-bottom: 65px; }
 
 

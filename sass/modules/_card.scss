@@ -1,0 +1,78 @@
+@import './color';
+@import './font';
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  .card {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: $white;
+    border-radius: 7px;
+    max-width: 340px;
+    &__photo {
+      font-size: 0;
+      img {
+        border-radius: 7px 7px 0 0;
+      }
+    }
+    &__content {
+      padding: 14px 18px 10px 18px;
+      &__title {
+        margin-bottom: 15px;
+        font-size: $subTitle-fontSize;
+        line-height: 1.25;
+        min-height: 2.5em;
+        color: $deepGray;
+        text-align: left;
+      }
+      &__description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > p {
+          font-size: 0;
+          padding-left: 15px;
+
+          > span {
+            font-size: $description-fontSize;
+            vertical-align: middle;
+            color: $deepGray;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            display: inline-block;
+          }
+          
+          > img {
+            height: 12px;
+            margin-right: 3px;
+            vertical-align: middle;
+          }
+        }
+      }
+      &__date {
+        background: url(../../images/icons/calendar.svg) no-repeat left center;
+        background-size: 11px;
+      }
+
+      &__country {
+        background: url(../../images/icons/mark-solid.svg) no-repeat left center;
+        background-size: 10px;
+      }
+
+      &__location {
+        background: url(../../images/icons/star.svg) no-repeat left center;
+        background-size: 12px;
+        max-width: 33.33333%;
+      }
+    }
+  }
+
+  .card + .card {
+    margin-left: 15px;
+  }
+}

@@ -1,9 +1,16 @@
 @import '../modules/menu';
+@import '../modules/card';
+@import '../modules/button';
 
 .activity {
   padding: 42px 0;
-  max-width: 1060px;
-  margin: auto;
+  text-align: center;
+
+  > * {
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &__location {
 
@@ -11,6 +18,9 @@
   &__categories {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 48px;
   }
-  &__liar{}
+  &__list{
+    margin-bottom: 65px;
+  }
 }
