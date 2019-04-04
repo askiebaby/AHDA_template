@@ -656,6 +656,11 @@ img {
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg); }
+  .button--callToAction {
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    padding: 9px 24px;
+    background: transparent; }
 
 .tabs {
   display: -webkit-box;
@@ -688,7 +693,7 @@ img {
       border-radius: 7px 7px 0 0; }
 
 .activity {
-  padding: 42px 0;
+  padding: 42px 0 70px;
   text-align: center; }
   .activity > * {
     max-width: 1060px;
@@ -704,5 +709,42 @@ img {
     margin-bottom: 48px; }
   .activity__list {
     margin-bottom: 30px; }
+
+.promotion {
+  position: relative;
+  background: #02bad3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .promotion__content {
+    text-align: center;
+    width: 75%;
+    padding: 92px 0;
+    color: #ffffff; }
+    .promotion__content::before {
+      content: '';
+      position: absolute;
+      left: 2%;
+      top: -7px;
+      background: url(../../images/cta_banner_bg.svg) no-repeat left top transparent;
+      background-size: 575px 400px;
+      width: 98%;
+      height: calc(100% + 7px); }
+    .promotion__content h2 {
+      margin-bottom: 36px;
+      font-size: 21px;
+      position: relative; }
+    .promotion__content p {
+      margin-bottom: 60px;
+      font-size: 15px;
+      line-height: 1.5;
+      position: relative; }
 
 

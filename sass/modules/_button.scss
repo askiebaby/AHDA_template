@@ -24,4 +24,10 @@
       transform: rotate(45deg);
     }
   }
+  &--callToAction {
+    color: $white;
+    border: solid 2px $white;
+    padding: 9px 24px;
+    background: transparent;
+  }
 }

@@ -1,0 +1,34 @@
+.promotion {
+  position: relative;
+  background: $primaryColor;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  &__content {
+    text-align: center;
+    width: 75%;
+    padding: 92px 0;
+    color: $white;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 2%;
+      top: -7px;
+      background: url(../../images/cta_banner_bg.svg) no-repeat left top transparent;
+      background-size: 575px 400px;
+      width: 98%;
+      height: calc(100% + 7px);
+    }
+    h2 {
+      margin-bottom: 36px;
+      font-size: $headline-fontSize;
+      position: relative;
+    }
+    p {
+      margin-bottom: 60px;
+      font-size: $subTitle-fontSize;
+      line-height: 1.5;
+      position: relative;
+    }
+  }
+}
