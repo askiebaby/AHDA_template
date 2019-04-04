@@ -3,14 +3,7 @@
 @import '../modules/font';
 
 .header {
-  display: flex;
-  flex: 1 1 100%;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
   padding: 8px 0;
-  max-width: 1440px;
-  margin: auto;
   border-bottom: 1px solid #ddd;
   position: fixed;
   top: 0;
@@ -18,6 +11,15 @@
   width: 100%;
   z-index: 99;
   background-color: $white;
+  > div {
+    max-width: 1440px;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
 
   &__logo {
     display: flex;

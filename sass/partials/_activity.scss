@@ -1,6 +1,7 @@
 @import '../modules/menu';
 @import '../modules/card';
 @import '../modules/button';
+@import '../modules/tab';
 
 .activity {
   padding: 42px 0;
@@ -21,6 +22,6 @@
     margin-bottom: 48px;
   }
   &__list{
-    margin-bottom: 65px;
+    margin-bottom: 30px;
   }
 }

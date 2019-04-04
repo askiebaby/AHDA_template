@@ -1,9 +1,27 @@
 .button {
   background: #fff;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
   &--primary {
     border: solid 1px #02bad3;
     color: #02bad3;
-    padding: 4px 32px 4px 14px;
     font-size: 15px;
+  }
+  &__more {
+    padding: 4px 32px 4px 14px;
+    position: relative;
+
+    &::before {
+      content:'';
+      position: absolute;
+      right: 15px;
+      width: 10px;
+      height: 10px;
+      border: 1px solid transparent;
+      border-bottom-color: #02bad3;
+      border-right-color: #02bad3;
+      transform: rotate(45deg);
+    }
   }
 }
