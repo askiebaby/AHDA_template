@@ -45,7 +45,21 @@
   </section>
   <!-- .carousel end -->
   <section class="activity">
-    <section class="activity__location"></section>
+    <section class="activity__location">
+      <div class="activity__location__select">
+        <label for="city" class="activity__location__label"><img src="./images/icons/mark.svg" /></label>
+        <select name="city-filter" id="city">
+          <option value="所有城市" selected>所有城市</option>
+          <option value="台北市">台北市</option>
+          <option value="新北市">新北市</option>
+          <option value="宜蘭縣">宜蘭縣</option>
+          <option value="基隆市">基隆市</option>
+          <option value="桃園市">桃園市</option>
+          <option value="新竹縣市">新竹縣市</option>
+          <option value="苗栗市">苗栗市</option>
+        </select>
+      </div>
+    </section>
     <section class="activity__categories">
       <button class="menu menu__event"><span>主題活動</span></button>
       <button class="menu menu__charity"><span>公益</span></button>
@@ -272,6 +286,13 @@
     </nav>
     <section class="footer__copyright">OOOO股份有限公司 © OOOO Inc. All Rights Reserved.</section>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery.selectric.js"></script>
+  <script>
+  $(function() {
+    $('select').selectric();
+  });
+  </script>
 </body>
 
 </html>
