@@ -1,0 +1,76 @@
+@import '../modules/color';
+@import '../modules/font';
+.footer {
+  background: $white-2;
+  nav {
+    margin-bottom: 80px;
+    ul {
+      padding-left: 0;
+    }
+
+    li {
+      list-style-type: none;
+      line-height: 1.5;
+    }
+
+    > ul {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1080px;
+      padding-top: 89px;
+    }
+
+    a {
+      display: inline-block;
+      font-size: $subTitle-fontSize;
+      color: $gray;
+    }
+  }
+
+  &__submenu {
+    margin-top: 12px;
+
+    li {
+      a {
+        color: $black;
+      }
+    }
+
+    li + li {
+      margin-top: 9px;
+    }
+  }
+
+  &__customerService {
+    flex-basis: 23.5%;
+  }
+
+  &__download {
+    flex-basis: 33%;
+    &__google {
+      img {
+        width: 100%;
+        max-width: 100px;
+      }
+    }
+    &__apple {
+      img {
+        position: relative;
+        left:-1px;
+        width: 100%;
+        max-width: 102px;
+      }
+    }
+  }
+  &__copyright {
+    text-align: center;
+    border-top: 1px solid $gray;
+    width: 75%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 15px 0 31px;
+    font-size: $subTitle-fontSize;
+  }
+}

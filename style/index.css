@@ -313,7 +313,7 @@ template {
 
 body {
   background-color: #02bad3; }
-  body > section {
+  body > * {
     background-color: #ffffff; }
 
 h1, h2, h3, h4, p {
@@ -725,7 +725,7 @@ img {
   justify-content: flex-end; }
   .promotion__content {
     text-align: center;
-    width: 75%;
+    width: 66%;
     padding: 92px 0;
     color: #ffffff; }
     .promotion__content::before {
@@ -746,5 +746,60 @@ img {
       font-size: 15px;
       line-height: 1.5;
       position: relative; }
+
+.footer {
+  background: #f4f4f4; }
+  .footer nav {
+    margin-bottom: 80px; }
+    .footer nav ul {
+      padding-left: 0; }
+    .footer nav li {
+      list-style-type: none;
+      line-height: 1.5; }
+    .footer nav > ul {
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      max-width: 1080px;
+      padding-top: 89px; }
+    .footer nav a {
+      display: inline-block;
+      font-size: 15px;
+      color: #7a7a7a; }
+  .footer__submenu {
+    margin-top: 12px; }
+    .footer__submenu li a {
+      color: #000000; }
+    .footer__submenu li + li {
+      margin-top: 9px; }
+  .footer__customerService {
+    -ms-flex-preferred-size: 23.5%;
+    flex-basis: 23.5%; }
+  .footer__download {
+    -ms-flex-preferred-size: 33%;
+    flex-basis: 33%; }
+    .footer__download__google img {
+      width: 100%;
+      max-width: 100px; }
+    .footer__download__apple img {
+      position: relative;
+      left: -1px;
+      width: 100%;
+      max-width: 102px; }
+  .footer__copyright {
+    text-align: center;
+    border-top: 1px solid #7a7a7a;
+    width: 75%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 15px 0 31px;
+    font-size: 15px; }
 
 
