@@ -1,13 +1,23 @@
+@import './color';
+
 .button {
   background: #fff;
   outline: 0;
   border: 0;
   cursor: pointer;
   &--primary {
-    border: solid 1px #02bad3;
+    border: solid 1px $primaryColor;
     color: #02bad3;
     font-size: 15px;
+    padding: 5px;
   }
+  &__card--callToAction {
+    color: $primaryColor;
+    border: solid 2px $primaryColor;
+    padding: 7px 24px;
+    background: transparent;
+  }
+
   &__more {
     padding: 4px 32px 4px 14px;
     position: relative;
@@ -24,7 +34,7 @@
       transform: rotate(45deg);
     }
   }
-  &--callToAction {
+  &__promotion--callToAction {
     color: $white;
     border: solid 2px $white;
     padding: 9px 24px;

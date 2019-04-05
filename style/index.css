@@ -592,6 +592,10 @@ img {
         min-height: 2.5em;
         color: #484848;
         text-align: left; }
+        .cards .card__content__title--center {
+          text-align: center;
+          margin-bottom: 8px;
+          min-height: auto; }
       .cards .card__content__description {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -602,6 +606,10 @@ img {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
+        .cards .card__content__description--center {
+          text-align: center; }
+          .cards .card__content__description--center button {
+            margin: 0 auto 3px; }
         .cards .card__content__description > p {
           font-size: 0;
           padding-left: 15px; }
@@ -640,7 +648,13 @@ img {
   .button--primary {
     border: solid 1px #02bad3;
     color: #02bad3;
-    font-size: 15px; }
+    font-size: 15px;
+    padding: 5px; }
+  .button__card--callToAction {
+    color: #02bad3;
+    border: solid 2px #02bad3;
+    padding: 7px 24px;
+    background: transparent; }
   .button__more {
     padding: 4px 32px 4px 14px;
     position: relative; }
@@ -656,7 +670,7 @@ img {
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg); }
-  .button--callToAction {
+  .button__promotion--callToAction {
     color: #ffffff;
     border: solid 2px #ffffff;
     padding: 9px 24px;
