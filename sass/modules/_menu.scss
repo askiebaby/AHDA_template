@@ -1,113 +1,173 @@
 @import './color';
 @import './font';
+@import './mediaquery';
 
-.menu {
-  position: relative;
-  width: 90px;
-  height: 90px;
-  outline: none;
-  border-radius: 50%;
-  border: 2px solid $primaryColor;
-  color: $primaryColor;
-  cursor: pointer;
-  font-size: $content-fontSize;
-  &:hover {
-    background: $primaryColor;
-    color: $white;
-  }
+.activity {
+  .menu {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border-radius: 50%;
+    border: 2px solid $primaryColor;
+    color: $primaryColor;
+    cursor: pointer;
+    font-size: $content-fontSize;
+    &:hover {
+      background: $primaryColor;
+      color: $white;
+    }
 
-  > span {
-    position: absolute;
-    bottom: 16px;
-    left: 0;
-    right: 0;
-  }
+    @include mediaquery_customized-800px {
+      transform: scale(0.68888);
+      margin: 0;
+      transform-origin: top left;
+      padding: 0;
+    }
 
-  &__hiddenMobile {
-    font-size: 0;
-    flex-basis: 18.5%;
-    display: flex;
-    justify-content: space-between;
-  }
+    @include mediaquery_phone {
+      margin: 0 auto;
+      transform-origin: top center;
+    }
 
-  &__event {
-    background: url(../../images/icons/hot-event-blue.svg) no-repeat center bottom 38px transparent;
-    background-size: 22px;
-    &:hover{
-      background: url(../../images/icons/hot-event-white.svg) no-repeat center bottom 38px $primaryColor;
+
+    > span {
+      position: absolute;
+      bottom: 16px;
+      left: 0;
+      right: 0;
+    }
+
+    &__hidden--tablet {
+      font-size: 0;
+      flex-basis: 18.5%;
+      display: flex;
+      justify-content: space-between;
+      @include mediaquery_customized-1060px {
+        display: none;
+      }
+    }
+    &__show {
+      &--tablet {
+        display: none;
+        @include mediaquery_customized-1060px {
+          display: flex;
+          transform: scale(.8);
+          transform-origin: center;
+          img {
+            max-width: initial;
+          }
+        }
+        @include mediaquery_phone {
+          display: none;
+        }
+      }
+      &--phone {
+        display: none;
+        @include mediaquery_phone {
+          display: block;
+          text-align: center;
+          margin: 4px auto 0;
+          color: $deepGray;
+          width: 100%;
+          img {
+            transform: rotate(90deg);
+            vertical-align: middle;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;;
+          }
+        }
+      }
+    }
+
+    &__event {
+      background: url(../../images/icons/hot-event-blue.svg) no-repeat center bottom 38px transparent;
       background-size: 22px;
+      &:hover{
+        background: url(../../images/icons/hot-event-white.svg) no-repeat center bottom 38px $primaryColor;
+        background-size: 22px;
+      }
     }
-  }
-  &__charity {
-    background: url(../../images/icons/discount-blue.svg) no-repeat center bottom 37px transparent;
-    background-size: 35px;
-    &:hover{
-      background: url(../../images/icons/discount-white.svg) no-repeat center bottom 37px $primaryColor;
+    &__charity {
+      background: url(../../images/icons/discount-blue.svg) no-repeat center bottom 37px transparent;
       background-size: 35px;
+      &:hover{
+        background: url(../../images/icons/discount-white.svg) no-repeat center bottom 37px $primaryColor;
+        background-size: 35px;
+      }
     }
-  }
-  &__discount {
-    background: url(../../images/icons/discount-blue.svg) no-repeat center bottom 37px transparent;
-    background-size: 35px;
-    &:hover{
-      background: url(../../images/icons/discount-white.svg) no-repeat center bottom 37px $primaryColor;
+    &__discount {
+      background: url(../../images/icons/discount-blue.svg) no-repeat center bottom 37px transparent;
       background-size: 35px;
+      &:hover{
+        background: url(../../images/icons/discount-white.svg) no-repeat center bottom 37px $primaryColor;
+        background-size: 35px;
+      }
     }
-  }
-  &__fun {
-    background: url(../../images/icons/hot-air-balloon-blue.svg) no-repeat center bottom 36px transparent;
-    background-size: 30px;
-    &:hover{
-      background: url(../../images/icons/hot-air-ballon-white.svg) no-repeat center bottom 36px $primaryColor;
+    &__fun {
+      background: url(../../images/icons/hot-air-balloon-blue.svg) no-repeat center bottom 36px transparent;
       background-size: 30px;
+      &:hover{
+        background: url(../../images/icons/hot-air-ballon-white.svg) no-repeat center bottom 36px $primaryColor;
+        background-size: 30px;
+      }
     }
-  }
-  &__news {
-    background: url(../../images/icons/rocket-blue.svg) no-repeat center bottom 36px transparent;
-    background-size: 35px;
-    &:hover{
-      background: url(../../images/icons/rocket-white.svg) no-repeat center bottom 36px $primaryColor;
+    &__news {
+      background: url(../../images/icons/rocket-blue.svg) no-repeat center bottom 36px transparent;
       background-size: 35px;
+      &:hover{
+        background: url(../../images/icons/rocket-white.svg) no-repeat center bottom 36px $primaryColor;
+        background-size: 35px;
+      }
     }
-  }
-  &__ordinary {
-    background: url(../../images/icons/person-blue.svg) no-repeat center bottom 37px transparent;
-    background-size: 32px;
-    &:hover{
-      background: url(../../images/icons/person-white.svg) no-repeat center bottom 37px $primaryColor;
+    &__ordinary {
+      background: url(../../images/icons/person-blue.svg) no-repeat center bottom 37px transparent;
       background-size: 32px;
+      &:hover{
+        background: url(../../images/icons/person-white.svg) no-repeat center bottom 37px $primaryColor;
+        background-size: 32px;
+      }
     }
-  }
-  &__family {
-    background: url(../../images/icons/infant-blue.svg) no-repeat center bottom 37px transparent;
-    background-size: 36px;
-    &:hover{
-      background: url(../../images/icons/infant-white.svg) no-repeat center bottom 37px $primaryColor;
+    &__family {
+      background: url(../../images/icons/infant-blue.svg) no-repeat center bottom 37px transparent;
       background-size: 36px;
+      &:hover{
+        background: url(../../images/icons/infant-white.svg) no-repeat center bottom 37px $primaryColor;
+        background-size: 36px;
+      }
     }
-  }
-  &__art {
-    background: url(../../images/icons/guitar-blue.svg) no-repeat center bottom 37px transparent;
-    background-size: 36px;
-    &:hover{
-      background: url(../../images/icons/guitar-white.svg) no-repeat center bottom 37px $primaryColor;
+    &__art {
+      background: url(../../images/icons/guitar-blue.svg) no-repeat center bottom 37px transparent;
       background-size: 36px;
+      &:hover{
+        background: url(../../images/icons/guitar-white.svg) no-repeat center bottom 37px $primaryColor;
+        background-size: 36px;
+      }
+    }
+    &__fitness {
+      background: url(../../images/icons/fitness-blue.svg) no-repeat center bottom 40px transparent;
+      background-size: 38px;
+      &:hover{
+        background: url(../../images/icons/fitness-white.svg) no-repeat center bottom 40px $primaryColor;
+      background-size: 38px;
+      }
+    }
+    &__food {
+      background: url(../../images/icons/food-blue.svg) no-repeat center bottom 36px transparent;
+      background-size: 27px;
+      &:hover{
+        background: url(../../images/icons/food-white.svg) no-repeat center bottom 36px $primaryColor;
+      background-size: 27px;
+      }
     }
   }
-  &__fitness {
-    background: url(../../images/icons/fitness-blue.svg) no-repeat center bottom 40px transparent;
-    background-size: 38px;
-    &:hover{
-      background: url(../../images/icons/fitness-white.svg) no-repeat center bottom 40px $primaryColor;
-    background-size: 38px;
-    }
-  }
-  &__food {
-    background: url(../../images/icons/food-blue.svg) no-repeat center bottom 36px transparent;
-    background-size: 27px;
-    &:hover{
-      background: url(../../images/icons/food-white.svg) no-repeat center bottom 36px $primaryColor;
-    background-size: 27px;
-    }
+  .menu + .menu {
+    // @include mediaquery_phone {
+    //   margin-left: 11px;
+    // }
+    // @include mediaquery_iPhone5 {
+    //   margin-left: 0;
+    // }
   }
 }

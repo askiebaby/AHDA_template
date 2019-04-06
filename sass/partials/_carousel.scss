@@ -22,7 +22,7 @@
     }
     &__previous {
       margin-right: 14px;
-      @include mediaquery_customized-2 {
+      @include mediaquery_customized-1170px {
         margin-right: -27px;
         padding: 10px 0;
         z-index: 5;
@@ -34,7 +34,7 @@
     }
     &__next {
       margin-left: 14px;
-      @include mediaquery_customized-2 {
+      @include mediaquery_customized-1170px {
         margin-left: -27px;
         padding: 10px 0;
         z-index: 5;
@@ -48,7 +48,7 @@
   &__photos {
     position: relative;
     font-size: 0;
-    @include mediaquery_customized {
+    @include mediaquery_customized-1060px {
       width: 95%;
       max-width: 1024px;
     }

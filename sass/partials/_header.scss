@@ -83,7 +83,8 @@
       margin: 0;
 
       @include mediaquery_iPadMini {
-        display: none;
+        visibility: hidden; 
+        opacity: 0;
         position: absolute;
         width: 100%;
         left: 0;
@@ -124,6 +125,10 @@
       &:checked {
         + .header__navbar__pc {
           @include mediaquery_iPadMini {
+            opacity: 1;
+            transition: opacity ease-in .2s;
+            visibility: visible;
+            height: auto;
             display: block;
           }
         }
@@ -134,10 +139,10 @@
       @include mediaquery_iPadMini {
         display: block;
         padding-right: 10px;
+        cursor: pointer;
       }
       img {
         padding: 5px 10px;
-        cursor: pointer;
       }
     }
   }

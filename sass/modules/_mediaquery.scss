@@ -1,31 +1,77 @@
-$width__phone:       576px;
-$width__iPadMini:    768px;
-$width__iPad:       1024px;
-$width__customized: 1060px;
-$mediaquery_customized-2: 1170px;
-$width__pc:         1440px;
+$width__iPhone5: 430px;
+$width__phone: 576px;
+$width__iPadMini: 768px;
+$width__customized-800px: 800px;
+$width__customized-880px: 880px;
+$width__customized-950px: 950px;
+$width__iPad: 1024px;
+$width__customized-1060px: 1060px;
+$width__customized-1095px: 1095px;
+$width__customized-1170px: 1170px;
+$width__pc: 1440px;
+
+@mixin mediaquery_iPhone5 {
+    @media all and (max-width: $width__iPhone5) {
+        @content;
+    }
+}
+
 @mixin mediaquery_phone {
     @media all and (max-width: $width__phone) {
         @content;
     }
 }
+
 @mixin mediaquery_iPadMini {
     @media all and (max-width: $width__iPadMini) {
         @content;
     }
 }
-@mixin mediaquery_customized {
-    @media all and (max-width: $width__customized) {
+
+@mixin mediaquery_iPad {
+    @media all and (max-width: $width__iPad) {
         @content;
     }
 }
-@mixin mediaquery_customized-2 {
-    @media all and (max-width: $mediaquery_customized-2) {
+
+@mixin mediaquery_customized-800px {
+    @media all and (max-width: $width__customized-800px) {
         @content;
     }
 }
-@mixin mediaquery_pc{
-    @media all and (max-width: $width__pc){
+
+@mixin mediaquery_customized-880px {
+    @media all and (max-width: $width__customized-880px) {
+        @content;
+    }
+}
+
+@mixin mediaquery_customized-950px {
+    @media all and (max-width: $width__customized-950px) {
+        @content;
+    }
+}
+
+@mixin mediaquery_customized-1060px {
+    @media all and (max-width: $width__customized-1060px) {
+        @content;
+    }
+}
+
+@mixin mediaquery_customized-1095px {
+    @media all and (max-width: $width__customized-1095px) {
+        @content;
+    }
+}
+
+@mixin mediaquery_customized-1170px {
+    @media all and (max-width: $width__customized-1170px) {
+        @content;
+    }
+}
+
+@mixin mediaquery_pc {
+    @media all and (max-width: $width__pc) {
         @content;
     }
 }

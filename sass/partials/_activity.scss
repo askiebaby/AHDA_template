@@ -8,7 +8,12 @@
 .activity {
   padding: 42px 0 70px;
   text-align: center;
-
+  @include mediaquery_iPadMini {
+    padding: 32px 0 63px;
+  }
+  @include mediaquery_phone {
+    padding: 15px 0 63px;
+  }
   > * {
     max-width: 1060px;
     margin-left: auto;
@@ -20,8 +25,12 @@
     max-width: 360px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 2px;
+    @include mediaquery_iPadMini {
+      margin-bottom: 31px;
+    }
     @include mediaquery_phone {
       max-width: 298px;
+      margin-bottom: 21px;
     }
     &__label {
       background-color: $primaryColor;
@@ -47,8 +56,52 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 48px;
+
+    @include mediaquery_phone {
+      display: block;
+    }
+    
+    > div {
+    display: flex;
+    justify-content: space-between;
+      &:nth-child(1), &:nth-child(2) {
+        flex-basis: 39%;
+        @include mediaquery_customized-1060px {
+          flex-basis: 45.5%;
+        }
+        @include mediaquery_customized-950px {
+          flex-basis: 46%;
+        }
+        @include mediaquery_customized-880px {
+          flex-basis: 46.5%;
+        }
+        @include mediaquery_customized-800px {
+          display: grid;
+          grid-template-columns: repeat(4, 25%);
+          grid-template-rows: 62px;
+          width: calc(50% - 17.5px);
+        }
+        @include mediaquery_phone {
+          width: 100%;
+          grid-template-rows: 77px;
+        }
+        
+      }
+    }
+    
+    @include mediaquery_customized-1060px {
+      width: 95%;
+    }
+    @include mediaquery_phone {
+      // flex-wrap: wrap;
+    }
+    
   }
   &__list{
     margin-bottom: 30px;
+    @include mediaquery_customized-1095px {
+      width: 95%;
+      max-width: $width__customized-1060px;
+    }
   }
 }
