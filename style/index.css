@@ -490,15 +490,46 @@ img {
     align-items: center; }
   .carousel__action {
     cursor: pointer; }
+    @media all and (max-width: 576px) {
+      .carousel__action {
+        position: absolute; } }
     .carousel__action img {
       max-width: initial; }
+      @media all and (max-width: 576px) {
+        .carousel__action img {
+          width: 25px; } }
     .carousel__action__previous {
-      padding-right: 14px; }
+      margin-right: 14px; }
+      @media all and (max-width: 1170px) {
+        .carousel__action__previous {
+          margin-right: -27px;
+          padding: 10px 0;
+          z-index: 5; } }
+      @media all and (max-width: 576px) {
+        .carousel__action__previous {
+          left: 3px;
+          padding: 30px 30px 30px 0; } }
     .carousel__action__next {
-      padding-left: 14px; }
+      margin-left: 14px; }
+      @media all and (max-width: 1170px) {
+        .carousel__action__next {
+          margin-left: -27px;
+          padding: 10px 0;
+          z-index: 5; } }
+      @media all and (max-width: 576px) {
+        .carousel__action__next {
+          right: 3px;
+          padding: 30px 0 30px 30px; } }
   .carousel__photos {
     position: relative;
     font-size: 0; }
+    @media all and (max-width: 1060px) {
+      .carousel__photos {
+        width: 95%;
+        max-width: 1024px; } }
+    @media all and (max-width: 576px) {
+      .carousel__photos {
+        width: 100%; } }
     .carousel__photos img {
       max-width: 100%; }
     .carousel__photos__index {
@@ -511,6 +542,12 @@ img {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
+      @media all and (max-width: 768px) {
+        .carousel__photos__index {
+          bottom: 16px; } }
+      @media all and (max-width: 576px) {
+        .carousel__photos__index {
+          bottom: 8px; } }
       .carousel__photos__index .dot {
         width: 9px;
         height: 9px;
@@ -543,8 +580,8 @@ img {
     right: 0; }
   .menu__hiddenMobile {
     font-size: 0;
-    -ms-flex-preferred-size: 19%;
-    flex-basis: 19%;
+    -ms-flex-preferred-size: 18.5%;
+    flex-basis: 18.5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -1,7 +1,9 @@
-$width__phone:   576px;
+$width__phone:       576px;
 $width__iPadMini:    768px;
+$width__iPad:       1024px;
 $width__customized: 1060px;
-$width__pc:      1440px;
+$mediaquery_customized-2: 1170px;
+$width__pc:         1440px;
 @mixin mediaquery_phone {
     @media all and (max-width: $width__phone) {
         @content;
@@ -14,6 +16,11 @@ $width__pc:      1440px;
 }
 @mixin mediaquery_customized {
     @media all and (max-width: $width__customized) {
+        @content;
+    }
+}
+@mixin mediaquery_customized-2 {
+    @media all and (max-width: $mediaquery_customized-2) {
         @content;
     }
 }

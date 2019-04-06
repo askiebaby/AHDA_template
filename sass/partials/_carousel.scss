@@ -1,3 +1,5 @@
+@import '../modules/mediaquery';
+
 .carousel {
   position: relative;
   text-align: center;
@@ -9,19 +11,50 @@
   }
   &__action {
     cursor: pointer;
+    @include mediaquery_phone {
+      position: absolute;
+    }
     img {
       max-width: initial;
+      @include mediaquery_phone {
+        width: 25px;
+      }
     }
     &__previous {
-      padding-right: 14px;
+      margin-right: 14px;
+      @include mediaquery_customized-2 {
+        margin-right: -27px;
+        padding: 10px 0;
+        z-index: 5;
+      }
+      @include mediaquery_phone {
+        left: 3px;
+        padding: 30px 30px 30px 0;
+      }
     }
     &__next {
-      padding-left: 14px;
+      margin-left: 14px;
+      @include mediaquery_customized-2 {
+        margin-left: -27px;
+        padding: 10px 0;
+        z-index: 5;
+      }
+      @include mediaquery_phone {
+        right: 3px;
+        padding: 30px 0 30px 30px;
+      }
     }
   }
   &__photos {
     position: relative;
     font-size: 0;
+    @include mediaquery_customized {
+      width: 95%;
+      max-width: 1024px;
+    }
+    @include mediaquery_phone {
+      width: 100%;
+    }
     img {
       max-width: 100%;
     }
@@ -32,6 +65,12 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      @include mediaquery_iPadMini {
+        bottom: 16px;
+      }
+      @include mediaquery_phone {
+        bottom: 8px;
+      }
 
       .dot {
         width: 9px;
