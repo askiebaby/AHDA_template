@@ -809,6 +809,9 @@ img {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 2px; }
+    @media all and (max-width: 576px) {
+      .activity__location {
+        max-width: 298px; } }
     .activity__location__label {
       background-color: #02bad3;
       width: 40px;

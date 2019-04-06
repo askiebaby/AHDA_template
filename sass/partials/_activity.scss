@@ -3,6 +3,7 @@
 @import '../modules/card';
 @import '../modules/button';
 @import '../modules/tab';
+@import '../modules/mediaquery';
 
 .activity {
   padding: 42px 0 70px;
@@ -19,6 +20,9 @@
     max-width: 360px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 2px;
+    @include mediaquery_phone {
+      max-width: 298px;
+    }
     &__label {
       background-color: $primaryColor;
       width: 40px;
