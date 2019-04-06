@@ -9,6 +9,9 @@
   }
   &__action {
     cursor: pointer;
+    img {
+      max-width: initial;
+    }
     &__previous {
       padding-right: 14px;
     }
