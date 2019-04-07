@@ -735,6 +735,19 @@ img {
     max-width: 340px;
     margin-left: 20px;
     margin-bottom: 35px; }
+    @media all and (max-width: 768px) {
+      .cards .card {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-left: 0; } }
+    @media all and (max-width: 576px) {
+      .cards .card {
+        max-width: 298px;
+        margin-bottom: 30px; } }
+    @media all and (max-width: 430px) {
+      .cards .card {
+        width: 100%; } }
     .cards .card__photo {
       font-size: 0; }
       .cards .card__photo img {
@@ -798,6 +811,9 @@ img {
     @media all and (max-width: 1095px) {
       .cards .card:nth-child(3n+1) {
         margin-left: 20px; } }
+    @media all and (max-width: 768px) {
+      .cards .card:nth-child(3n+1) {
+        margin-left: 0; } }
   @media all and (max-width: 1095px) {
     .cards .card:nth-child(2n+1) {
       margin-left: 0; } }
@@ -856,17 +872,24 @@ img {
     border: 1px solid #02bad3;
     cursor: pointer; }
     .tabs .tab:nth-child(1) {
-      border-right-color: transparent; }
+      border-left: 0; }
     .tabs .tab:nth-child(2) {
-      border-left-color: transparent;
-      border-right-color: transparent; }
+      border-left: 0;
+      border-right: 0; }
     .tabs .tab:nth-child(3) {
-      border-left-color: transparent; }
+      border-left: 0; }
     .tabs .tab--active {
       background: #02bad3;
       color: #ffffff;
       padding: 16px 0 14px 0;
       border-radius: 7px 7px 0 0; }
+  @media all and (max-width: 1170px) {
+    .tabs {
+      width: 95%; } }
+  @media all and (max-width: 430px) {
+    .tabs {
+      width: 100%;
+      padding: 0 11px; } }
 
 .activity {
   padding: 42px 0 70px;
@@ -926,9 +949,16 @@ img {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 48px; }
+    @media all and (max-width: 1060px) {
+      .activity__categories {
+        width: 95%; } }
+    @media all and (max-width: 800px) {
+      .activity__categories {
+        width: 90%; } }
     @media all and (max-width: 576px) {
       .activity__categories {
-        display: block; } }
+        display: block;
+        width: 100%; } }
     .activity__categories > div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -965,15 +995,16 @@ img {
             width: 100%;
             -ms-grid-rows: 77px;
             grid-template-rows: 77px; } }
-    @media all and (max-width: 1060px) {
-      .activity__categories {
-        width: 95%; } }
   .activity__list {
     margin-bottom: 30px; }
     @media all and (max-width: 1095px) {
       .activity__list {
         width: 95%;
         max-width: 1060px; } }
+    @media all and (max-width: 768px) {
+      .activity__list {
+        width: 100%;
+        padding: 0 11px; } }
 
 .promotion {
   position: relative;
@@ -990,9 +1021,35 @@ img {
   justify-content: flex-end; }
   .promotion__content {
     text-align: center;
-    width: 66%;
+    width: 60%;
     padding: 92px 0;
     color: #ffffff; }
+    @media all and (max-width: 1170px) {
+      .promotion__content {
+        width: 50%; } }
+    @media all and (max-width: 950px) {
+      .promotion__content {
+        width: 40%;
+        margin-right: 2%; } }
+    @media all and (max-width: 880px) {
+      .promotion__content {
+        width: 35%; } }
+    @media all and (max-width: 800px) {
+      .promotion__content {
+        width: 28%;
+        padding: 82px 0;
+        margin-right: 5%; } }
+    @media all and (max-width: 750px) {
+      .promotion__content {
+        width: 100%;
+        padding: 67% 0 50px;
+        margin-right: 0; } }
+    @media all and (max-width: 576px) {
+      .promotion__content {
+        padding-top: 87%; } }
+    @media all and (max-width: 430px) {
+      .promotion__content {
+        padding: 105% 15% 52px; } }
     .promotion__content::before {
       content: '';
       position: absolute;
@@ -1002,6 +1059,27 @@ img {
       background-size: 575px 400px;
       width: 98%;
       height: calc(100% + 7px); }
+      @media all and (max-width: 1170px) {
+        .promotion__content::before {
+          left: -8%; } }
+      @media all and (max-width: 768px) {
+        .promotion__content::before {
+          left: -12%; } }
+      @media all and (max-width: 750px) {
+        .promotion__content::before {
+          width: 100%;
+          left: 0;
+          right: 0;
+          top: 0;
+          background-position: top 36px center;
+          background-size: 80%; } }
+      @media all and (max-width: 576px) {
+        .promotion__content::before {
+          background-size: 100%; } }
+      @media all and (max-width: 430px) {
+        .promotion__content::before {
+          background-position: top 36px left -30px;
+          background-size: 112%; } }
     .promotion__content h2 {
       margin-bottom: 36px;
       font-size: 21px;

@@ -57,8 +57,16 @@
     justify-content: space-between;
     margin-bottom: 48px;
 
+    @include mediaquery_customized-1060px {
+      width: 95%;
+    }
+
+    @include mediaquery_customized-800px {
+      width: 90%;
+    }
     @include mediaquery_phone {
       display: block;
+      width: 100%;
     }
     
     > div {
@@ -88,20 +96,17 @@
         
       }
     }
-    
-    @include mediaquery_customized-1060px {
-      width: 95%;
-    }
-    @include mediaquery_phone {
-      // flex-wrap: wrap;
-    }
-    
   }
   &__list{
     margin-bottom: 30px;
     @include mediaquery_customized-1095px {
       width: 95%;
       max-width: $width__customized-1060px;
+    }
+
+    @include mediaquery_iPadMini {
+      width: 100%;
+      padding: 0 11px;
     }
   }
 }

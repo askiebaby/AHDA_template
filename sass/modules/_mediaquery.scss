@@ -1,5 +1,6 @@
 $width__iPhone5: 430px;
 $width__phone: 576px;
+$width__customized-750px: 750px;
 $width__iPadMini: 768px;
 $width__customized-800px: 800px;
 $width__customized-880px: 880px;
@@ -30,6 +31,12 @@ $width__pc: 1440px;
 
 @mixin mediaquery_iPad {
     @media all and (max-width: $width__iPad) {
+        @content;
+    }
+}
+
+@mixin mediaquery_customized-750px {
+    @media all and (max-width: $width__customized-750px) {
         @content;
     }
 }

@@ -17,6 +17,20 @@
     max-width: 340px;
     margin-left: 20px;
     margin-bottom: 35px;
+
+    @include mediaquery_iPadMini {
+      justify-content: space-between;
+      margin-left: 0;
+    }
+
+    @include mediaquery_phone {
+      max-width: 298px;
+      margin-bottom: 30px;
+    }
+    @include mediaquery_iPhone5 {
+      width: 100%;
+    }
+    
     &__photo {
       font-size: 0;
       img {
@@ -95,6 +109,9 @@
     margin-left: 0;
     @include mediaquery_customized-1095px {
       margin-left: 20px;
+    }
+    @include mediaquery_iPadMini{ 
+      margin-left: 0;
     }
   }
   .card:nth-child(2n+1) {

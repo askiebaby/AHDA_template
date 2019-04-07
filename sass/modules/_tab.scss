@@ -12,14 +12,14 @@
     border: 1px solid $primaryColor;
     cursor: pointer;
     &:nth-child(1){
-      border-right-color: transparent;
+      border-left: 0;
     }
     &:nth-child(2){
-      border-left-color: transparent;
-      border-right-color: transparent;
+      border-left: 0;
+      border-right: 0;
     }
     &:nth-child(3){
-      border-left-color: transparent;
+      border-left: 0;
     }
     &--active {
       background: $primaryColor;
@@ -27,5 +27,12 @@
       padding: 16px 0 14px 0;
       border-radius: 7px 7px 0 0; 
     }
+  }
+  @include mediaquery_customized-1170px {
+    width: 95%;
+  }
+  @include mediaquery_iPhone5 {
+    width: 100%;
+    padding: 0 11px;
   }
 }
