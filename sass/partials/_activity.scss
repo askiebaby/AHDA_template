@@ -64,6 +64,7 @@
     @include mediaquery_customized-800px {
       width: 90%;
     }
+
     @include mediaquery_phone {
       display: block;
       width: 100%;
@@ -92,6 +93,8 @@
         @include mediaquery_phone {
           width: 100%;
           grid-template-rows: 77px;
+          max-width: 320px;
+          margin: auto;
         }
         
       }

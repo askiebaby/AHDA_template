@@ -60,6 +60,7 @@
         right: 0;
         top: 0;
         background-size: 80%;
+        background-position: top 36px center;
       }
 
       @include mediaquery_phone { 

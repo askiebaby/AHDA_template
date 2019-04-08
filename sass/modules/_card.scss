@@ -117,11 +117,7 @@
       margin-left: 0;
     }
   }
-  .card:nth-child(2n+1) {
-    @include mediaquery_customized-1095px {
-      margin-left: 0; 
-    }
-  }
+
   .card:nth-child(2n+2) {
     @include mediaquery_iPadMini{
       margin-left: 21px;

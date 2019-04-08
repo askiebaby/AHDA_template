@@ -580,13 +580,15 @@ img {
     color: #ffffff; }
   @media all and (max-width: 800px) {
     .activity .menu {
-      -webkit-transform: scale(0.68888);
-      -ms-transform: scale(0.68888);
-      transform: scale(0.68888);
-      margin: 0;
+      width: 80px;
+      height: 80px;
+      -webkit-transform: scale(0.775);
+      -ms-transform: scale(0.775);
+      transform: scale(0.775);
       -webkit-transform-origin: top left;
       -ms-transform-origin: top left;
       transform-origin: top left;
+      margin: 0;
       padding: 0; } }
   @media all and (max-width: 576px) {
     .activity .menu {
@@ -599,6 +601,10 @@ img {
     bottom: 16px;
     left: 0;
     right: 0; }
+    @media all and (max-width: 800px) {
+      .activity .menu > span {
+        bottom: 11px;
+        font-size: 12px; } }
   .activity .menu__hidden--tablet {
     font-size: 0;
     -ms-flex-preferred-size: 18.5%;
@@ -653,60 +659,120 @@ img {
     .activity .menu__event:hover {
       background: url(../../images/icons/hot-event-white.svg) no-repeat center bottom 38px #02bad3;
       background-size: 22px; }
+      @media all and (max-width: 800px) {
+        .activity .menu__event:hover {
+          background-position-y: 7px; } }
+    @media all and (max-width: 800px) {
+      .activity .menu__event {
+        background-position-y: 7px; } }
   .activity .menu__charity {
     background: url(../../images/icons/charity-blue.svg) no-repeat center bottom 37px transparent;
     background-size: 35px; }
     .activity .menu__charity:hover {
       background: url(../../images/icons/charity-white.svg) no-repeat center bottom 37px #02bad3;
       background-size: 35px; }
+      @media all and (max-width: 800px) {
+        .activity .menu__charity:hover {
+          background-position-y: 12px; } }
+    @media all and (max-width: 800px) {
+      .activity .menu__charity {
+        background-position-y: 12px; } }
   .activity .menu__discount {
     background: url(../../images/icons/discount-blue.svg) no-repeat center bottom 37px transparent;
     background-size: 35px; }
     .activity .menu__discount:hover {
       background: url(../../images/icons/discount-white.svg) no-repeat center bottom 37px #02bad3;
       background-size: 35px; }
+      @media all and (max-width: 800px) {
+        .activity .menu__discount:hover {
+          background-position-y: 10px; } }
+    @media all and (max-width: 800px) {
+      .activity .menu__discount {
+        background-position-y: 10px; } }
   .activity .menu__fun {
     background: url(../../images/icons/hot-air-balloon-blue.svg) no-repeat center bottom 36px transparent;
     background-size: 30px; }
     .activity .menu__fun:hover {
       background: url(../../images/icons/hot-air-ballon-white.svg) no-repeat center bottom 36px #02bad3;
       background-size: 30px; }
+      @media all and (max-width: 800px) {
+        .activity .menu__fun:hover {
+          background-position-y: 10px; } }
+    @media all and (max-width: 800px) {
+      .activity .menu__fun {
+        background-position-y: 10px; } }
   .activity .menu__news {
     background: url(../../images/icons/rocket-blue.svg) no-repeat center bottom 36px transparent;
     background-size: 35px; }
     .activity .menu__news:hover {
       background: url(../../images/icons/rocket-white.svg) no-repeat center bottom 36px #02bad3;
       background-size: 35px; }
+      @media all and (max-width: 800px) {
+        .activity .menu__news:hover {
+          background-position-y: 12px; } }
+    @media all and (max-width: 800px) {
+      .activity .menu__news {
+        background-position-y: 12px; } }
   .activity .menu__ordinary {
     background: url(../../images/icons/person-blue.svg) no-repeat center bottom 37px transparent;
     background-size: 32px; }
     .activity .menu__ordinary:hover {
       background: url(../../images/icons/person-white.svg) no-repeat center bottom 37px #02bad3;
       background-size: 32px; }
+      @media all and (max-width: 800px) {
+        .activity .menu__ordinary:hover {
+          background-position-y: 9px; } }
+    @media all and (max-width: 800px) {
+      .activity .menu__ordinary {
+        background-position-y: 9px; } }
   .activity .menu__family {
     background: url(../../images/icons/infant-blue.svg) no-repeat center bottom 37px transparent;
     background-size: 36px; }
     .activity .menu__family:hover {
       background: url(../../images/icons/infant-white.svg) no-repeat center bottom 37px #02bad3;
       background-size: 36px; }
+      @media all and (max-width: 800px) {
+        .activity .menu__family:hover {
+          background-position-y: 12px; } }
+    @media all and (max-width: 800px) {
+      .activity .menu__family {
+        background-position-y: 12px; } }
   .activity .menu__art {
     background: url(../../images/icons/guitar-blue.svg) no-repeat center bottom 37px transparent;
     background-size: 36px; }
     .activity .menu__art:hover {
       background: url(../../images/icons/guitar-white.svg) no-repeat center bottom 37px #02bad3;
       background-size: 36px; }
+      @media all and (max-width: 800px) {
+        .activity .menu__art:hover {
+          background-position-y: 10px; } }
+    @media all and (max-width: 800px) {
+      .activity .menu__art {
+        background-position-y: 10px; } }
   .activity .menu__fitness {
     background: url(../../images/icons/fitness-blue.svg) no-repeat center bottom 40px transparent;
     background-size: 38px; }
     .activity .menu__fitness:hover {
       background: url(../../images/icons/fitness-white.svg) no-repeat center bottom 40px #02bad3;
       background-size: 38px; }
+      @media all and (max-width: 800px) {
+        .activity .menu__fitness:hover {
+          background-position-y: 10px; } }
+    @media all and (max-width: 800px) {
+      .activity .menu__fitness {
+        background-position-y: 10px; } }
   .activity .menu__food {
     background: url(../../images/icons/food-blue.svg) no-repeat center bottom 36px transparent;
     background-size: 27px; }
     .activity .menu__food:hover {
       background: url(../../images/icons/food-white.svg) no-repeat center bottom 36px #02bad3;
       background-size: 27px; }
+      @media all and (max-width: 800px) {
+        .activity .menu__food:hover {
+          background-position-y: 10px; } }
+    @media all and (max-width: 800px) {
+      .activity .menu__food {
+        background-position-y: 10px; } }
 
 .cards {
   display: -webkit-box;
@@ -815,9 +881,6 @@ img {
     @media all and (max-width: 768px) {
       .cards .card:nth-child(3n+1) {
         margin-left: 0; } }
-  @media all and (max-width: 1095px) {
-    .cards .card:nth-child(2n+1) {
-      margin-left: 0; } }
   @media all and (max-width: 768px) {
     .cards .card:nth-child(2n+2) {
       margin-left: 21px; } }
@@ -1004,7 +1067,9 @@ img {
           .activity__categories > div:nth-child(1), .activity__categories > div:nth-child(2) {
             width: 100%;
             -ms-grid-rows: 77px;
-            grid-template-rows: 77px; } }
+            grid-template-rows: 77px;
+            max-width: 320px;
+            margin: auto; } }
   .activity__list {
     margin-bottom: 30px; }
     @media all and (max-width: 1095px) {
@@ -1082,7 +1147,8 @@ img {
           left: 0;
           right: 0;
           top: 0;
-          background-size: 80%; } }
+          background-size: 80%;
+          background-position: top 36px center; } }
       @media all and (max-width: 576px) {
         .promotion__content::before {
           background-size: 100%; } }

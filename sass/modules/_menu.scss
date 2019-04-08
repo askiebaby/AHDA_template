@@ -19,9 +19,11 @@
     }
 
     @include mediaquery_customized-800px {
-      transform: scale(0.68888);
-      margin: 0;
+      width: 80px;
+      height: 80px;
+      transform: scale(0.775);
       transform-origin: top left;
+      margin: 0;
       padding: 0;
     }
 
@@ -36,6 +38,10 @@
       bottom: 16px;
       left: 0;
       right: 0;
+      @include mediaquery_customized-800px {
+        bottom: 11px;
+        font-size: 12px;
+      }
     }
 
     &__hidden--tablet {
@@ -75,7 +81,7 @@
             vertical-align: middle;
             cursor: pointer;
             width: 25px;
-            height: 25px;;
+            height: 25px;
           }
         }
       }
@@ -87,7 +93,14 @@
       &:hover{
         background: url(../../images/icons/hot-event-white.svg) no-repeat center bottom 38px $primaryColor;
         background-size: 22px;
+        @include mediaquery_customized-800px {
+          background-position-y: 7px;
+        }
       }
+      @include mediaquery_customized-800px {
+        background-position-y: 7px;
+      }
+
     }
     &__charity {
       background: url(../../images/icons/charity-blue.svg) no-repeat center bottom 37px transparent;
@@ -95,6 +108,12 @@
       &:hover{
         background: url(../../images/icons/charity-white.svg) no-repeat center bottom 37px $primaryColor;
         background-size: 35px;
+        @include mediaquery_customized-800px {
+          background-position-y: 12px;
+        }
+      }
+      @include mediaquery_customized-800px {
+        background-position-y: 12px;
       }
     }
     &__discount {
@@ -103,6 +122,12 @@
       &:hover{
         background: url(../../images/icons/discount-white.svg) no-repeat center bottom 37px $primaryColor;
         background-size: 35px;
+        @include mediaquery_customized-800px {
+          background-position-y: 10px;
+        }
+      }
+      @include mediaquery_customized-800px {
+        background-position-y: 10px;
       }
     }
     &__fun {
@@ -111,6 +136,12 @@
       &:hover{
         background: url(../../images/icons/hot-air-ballon-white.svg) no-repeat center bottom 36px $primaryColor;
         background-size: 30px;
+        @include mediaquery_customized-800px {
+          background-position-y: 10px;
+        }
+      }
+      @include mediaquery_customized-800px {
+        background-position-y: 10px;
       }
     }
     &__news {
@@ -119,6 +150,12 @@
       &:hover{
         background: url(../../images/icons/rocket-white.svg) no-repeat center bottom 36px $primaryColor;
         background-size: 35px;
+        @include mediaquery_customized-800px {
+          background-position-y: 12px;
+        }
+      }
+      @include mediaquery_customized-800px {
+        background-position-y: 12px;
       }
     }
     &__ordinary {
@@ -127,6 +164,12 @@
       &:hover{
         background: url(../../images/icons/person-white.svg) no-repeat center bottom 37px $primaryColor;
         background-size: 32px;
+        @include mediaquery_customized-800px {
+          background-position-y: 9px;
+        }
+      }
+      @include mediaquery_customized-800px {
+        background-position-y: 9px;
       }
     }
     &__family {
@@ -135,6 +178,12 @@
       &:hover{
         background: url(../../images/icons/infant-white.svg) no-repeat center bottom 37px $primaryColor;
         background-size: 36px;
+        @include mediaquery_customized-800px {
+          background-position-y: 12px;
+        }
+      }
+      @include mediaquery_customized-800px {
+        background-position-y: 12px;
       }
     }
     &__art {
@@ -143,6 +192,12 @@
       &:hover{
         background: url(../../images/icons/guitar-white.svg) no-repeat center bottom 37px $primaryColor;
         background-size: 36px;
+        @include mediaquery_customized-800px {
+          background-position-y: 10px;
+        }
+      }
+      @include mediaquery_customized-800px {
+        background-position-y: 10px;
       }
     }
     &__fitness {
@@ -150,7 +205,13 @@
       background-size: 38px;
       &:hover{
         background: url(../../images/icons/fitness-white.svg) no-repeat center bottom 40px $primaryColor;
-      background-size: 38px;
+        background-size: 38px;
+        @include mediaquery_customized-800px {
+          background-position-y: 10px;
+        }
+      }
+      @include mediaquery_customized-800px {
+        background-position-y: 10px;
       }
     }
     &__food {
@@ -158,7 +219,13 @@
       background-size: 27px;
       &:hover{
         background: url(../../images/icons/food-white.svg) no-repeat center bottom 36px $primaryColor;
-      background-size: 27px;
+        background-size: 27px;
+        @include mediaquery_customized-800px {
+          background-position-y: 10px;
+        }
+      }
+      @include mediaquery_customized-800px {
+        background-position-y: 10px;
       }
     }
   }
