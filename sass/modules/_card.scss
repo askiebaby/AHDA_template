@@ -15,7 +15,7 @@
     background-color: $white;
     border-radius: 7px;
     max-width: 340px;
-    margin-left: 20px;
+    margin-left: 18px;
     margin-bottom: 35px;
 
     @include mediaquery_iPadMini {
@@ -39,6 +39,9 @@
     }
     &__content {
       padding: 14px 18px 10px 18px;
+      @include mediaquery_phone  {
+        padding: 11px 15px 10px;
+      }
       &__title {
         margin-bottom: 15px;
         font-size: $subTitle-fontSize;
@@ -108,7 +111,7 @@
   .card:nth-child(3n+1) {
     margin-left: 0;
     @include mediaquery_customized-1095px {
-      margin-left: 20px;
+      margin-left: 18px;
     }
     @include mediaquery_iPadMini{ 
       margin-left: 0;
@@ -117,6 +120,17 @@
   .card:nth-child(2n+1) {
     @include mediaquery_customized-1095px {
       margin-left: 0; 
+    }
+  }
+  .card:nth-child(2n+2) {
+    @include mediaquery_iPadMini{
+      margin-left: 21px;
+    }
+    @include mediaquery_customized-750px {
+      margin: 0 20px 30px;
+    }
+    @include mediaquery_iPhone5 {
+      margin: 0 0 30px;
     }
   }
 }

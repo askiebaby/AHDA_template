@@ -42,13 +42,14 @@
       content: '';
       position: absolute;
       left: 2%;
-      top: -7px;
-      background: url(../../images/cta_banner_bg.svg) no-repeat left top transparent;
-      background-size: 575px 400px;
-      width: 98%;
-      height: calc(100% + 7px);
+      bottom: 0;
+      background: url(../../images/cta_banner_bg.svg) no-repeat left bottom transparent;
+      background-size: contain;
+      width: 60%;
+      height: 102%;
       @include mediaquery_customized-1170px {
         left: -8%;
+        width: 75%;
       }
       @include mediaquery_iPadMini {
         left: -12%;
@@ -58,7 +59,6 @@
         left: 0;
         right: 0;
         top: 0;
-        background-position: top 36px center;
         background-size: 80%;
       }
 
