@@ -4,14 +4,13 @@
 
 .header {
   padding: 8px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.01);
+  border-bottom: 1px solid $lightGray;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
   background-color: $white;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
 
   > div {
     max-width: 1440px;
@@ -30,7 +29,7 @@
     min-width: 190px;
     padding-left: 16px;
     img {
-      max-width: 100%;
+      width: 41px;
     }
   }
   &__search {
