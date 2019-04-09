@@ -112,4 +112,21 @@
       padding: 0 11px;
     }
   }
+  &__loading {
+    padding: 46px 0 170px;
+    @include mediaquery_iPadMini {
+      padding: 26px 0 185px;
+    }
+    @include mediaquery_phone {
+      padding: 2px 0 65px;
+    }
+    &__spinner {
+      width: 60px;
+      animation: loadingSpin linear infinite 2s;
+    }
+    @keyframes loadingSpin {
+      from { transform:rotate(0deg); }
+      to { transform:rotate(360deg); }
+    }
+  }
 }

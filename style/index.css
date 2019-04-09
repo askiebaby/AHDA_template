@@ -1080,7 +1080,32 @@ img {
       .activity__list {
         width: 100%;
         padding: 0 11px; } }
-
+  .activity__loading {
+    padding: 46px 0 170px; }
+    @media all and (max-width: 768px) {
+      .activity__loading {
+        padding: 26px 0 185px; } }
+    @media all and (max-width: 576px) {
+      .activity__loading {
+        padding: 2px 0 65px; } }
+    .activity__loading__spinner {
+      width: 60px;
+      -webkit-animation: loadingSpin linear infinite 2s;
+      animation: loadingSpin linear infinite 2s; }
+@-webkit-keyframes loadingSpin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes loadingSpin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 .promotion {
   position: relative;
   background: #02bad3;

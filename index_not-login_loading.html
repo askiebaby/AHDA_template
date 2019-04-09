@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁_未登入01</title>
+  <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+  <header class="header">
+    <div>
+      <div class="header__logo"><a href="/"><img src="./images/logo_3x.png" alt="AHDA Logo" title="AHDA Logo" /></a></div>
+      <div class="header__search"><span><input type="search" name="" id="" placeholder="2019屏東燈會"><button
+            type="submit"><img src="./images/icons/search.svg" alt=""></button></span></div>
+      <nav class="header__navbar">
+        <label class="header__navbar__mobile" for="menu"><img src="./images/icons/bar.svg" alt="Menu" title="Menu"></label>
+        <input type="checkbox" class="hiddenButton"id="menu"></input>
+        <ul class="header__navbar__pc">
+          <li><a href="#">刊登活動</a></li>
+          <li><a href="#">登入</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- .header end -->
+  <section class="carousel">
+    <div>
+      <div class="carousel__action carousel__action__previous"><img src="./images/icons/left-direction.svg" alt="上一張">
+      </div>
+      <div class="carousel__photos">
+        <img src="https://fakeimg.pl/1060x500/" />
+        <div class="carousel__photos__index">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="carousel__action carousel__action__next"><img src="./images/icons/right-direction.svg" alt="下一張">
+      </div>
+    </div>
+  </section>
+  <!-- .carousel end -->
+  <section class="activity">
+    <section class="activity__location">
+      <div class="activity__location__select">
+        <label for="city" class="activity__location__label"><img src="./images/icons/mark.svg" /></label>
+        <select name="city-filter" id="city">
+          <option value="所有城市" selected>所有城市</option>
+          <option value="台北市">台北市</option>
+          <option value="新北市">新北市</option>
+          <option value="宜蘭縣">宜蘭縣</option>
+          <option value="基隆市">基隆市</option>
+          <option value="桃園市">桃園市</option>
+          <option value="新竹縣市">新竹縣市</option>
+          <option value="苗栗市">苗栗市</option>
+        </select>
+      </div>
+    </section>
+    <section class="activity__categories">
+      <div>
+        <button class="menu menu__event"><span>主題活動</span></button>
+        <button class="menu menu__charity"><span>公益</span></button>
+        <button class="menu menu__discount"><span>優惠日</span></button>
+        <button class="menu menu__fun"><span>玩樂</span></button>
+      </div>
+      <div>
+        <button class="menu menu__news"><span>新鮮事</span></button>
+        <button class="menu menu__ordinary"><span>素人專區</span></button>
+        <button class="menu menu__family"><span>親子</span></button>
+        <button class="menu menu__art"><span>藝文</span></button>
+      </div>
+      <div class="menu__show--tablet"><img src="images/icons/right-direction.svg" /></div>
+      <div class="menu__show--phone">More <img src="images/icons/right-direction.svg" /></div>
+      <div class="menu__hidden--tablet">
+        <button class="menu menu__fitness"><span>運動</span></button>
+        <button class="menu menu__food"><span>食</span></button>
+      </div>
+    </section>
+    <section class="activity__list">
+        <div class="activity__loading"><img class="activity__loading__spinner" src="./images/icons/spinner-of-dots.svg" /></div>
+    </section>
+  </section>
+  <section class="activity">
+    <section class="tabs">
+      <div class="tab tab--active">精選活動</div>
+      <div class="tab">最新活動</div>
+      <div class="tab">預留項目</div>
+    </section>
+    <section class="activity__list">
+      <div class="cards">
+        <div class="card">
+          <div class="card__photo">
+            <img src="https://fakeimg.pl/340x170/" />
+          </div>
+          <div class="card__content">
+            <h3 class="card__content__title">2019 XXX音樂會<br>123</h3>
+            <div class="card__content__description">
+              <p class="card__content__date"><span>2019/03/23 (六)</span></p>
+              <p class="card__content__country"><span>台北市</span></p>
+              <p class="card__content__location"><span>華山文創園區華山文創園區</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__photo">
+            <img src="https://fakeimg.pl/340x170/" />
+          </div>
+          <div class="card__content">
+            <h3 class="card__content__title">2019 XXX音樂會<br>123</h3>
+            <div class="card__content__description">
+              <p class="card__content__date"><span>2019/03/23 (六)</span></p>
+              <p class="card__content__country"><span>台北市</span></p>
+              <p class="card__content__location"><span>華山文創園區華山文創園區</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__photo">
+            <img src="https://fakeimg.pl/340x170/" />
+          </div>
+          <div class="card__content">
+            <h3 class="card__content__title">2019 XXX音樂會<br>123</h3>
+            <div class="card__content__description">
+              <p class="card__content__date"><span>2019/03/23 (六)</span></p>
+              <p class="card__content__country"><span>台北市</span></p>
+              <p class="card__content__location"><span>華山文創園區華山文創園區</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__photo">
+            <img src="https://fakeimg.pl/340x170/" />
+          </div>
+          <div class="card__content">
+            <h3 class="card__content__title">2019 XXX音樂會<br>123</h3>
+            <div class="card__content__description">
+              <p class="card__content__date"><span>2019/03/23 (六)</span></p>
+              <p class="card__content__country"><span>台北市</span></p>
+              <p class="card__content__location"><span>華山文創園區華山文創園區</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__photo">
+            <img src="https://fakeimg.pl/340x170/" />
+          </div>
+          <div class="card__content">
+            <h3 class="card__content__title">2019 XXX音樂會<br>123</h3>
+            <div class="card__content__description">
+              <p class="card__content__date"><span>2019/03/23 (六)</span></p>
+              <p class="card__content__country"><span>台北市</span></p>
+              <p class="card__content__location"><span>華山文創園區華山文創園區</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__photo">
+            <img src="https://fakeimg.pl/340x170/" />
+          </div>
+          <div class="card__content">
+            <h3 class="card__content__title">2019 XXX音樂會<br>123</h3>
+            <div class="card__content__description">
+              <p class="card__content__date"><span>2019/03/23 (六)</span></p>
+              <p class="card__content__country"><span>台北市</span></p>
+              <p class="card__content__location"><span>華山文創園區華山文創園區</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button class="button button--primary button__more">更多精選活動</button>
+  </section>
+  <!-- .activity end -->
+  <section class="promotion">
+    <div class="promotion__content">
+      <h2>刊登你的活動</h2>
+      <p>AHDA免費刊登你的活動資訊，並協助你建立、管理以及行銷，<br>更接近活動的潛在族群</p>
+      <button class="button button__promotion--callToAction">從這裡開始</button>
+    </div>
+  </section>
+  <!-- .promotion end -->
+  <footer class="footer">
+    <nav>
+      <ul>
+        <li class="footer__logo"><a href="/"><img src="./images/logo_3x.png" alt="AHDA Logo" title="AHDA Logo" /></a></li>
+        <li><a href="#">關於我們</a></li>
+        <li><a href="#">常見問題</a></li>
+        <li><a href="#">服務條款</a></li>
+        <div class="footer__mobileBreak">
+          <li class="footer__news"><a href="#">最新消息</a>
+            <ul class="footer__submenu">
+              <li><a href="#"><img src="./images/icons/facebook-logo.svg" alt="AHDA Facebook Fanpage" title="AHDA Facebook Fanpage"></a></li>
+              <li><a href="#"><img src="./images/icons/youtube-logo.svg" alt="AHDA Youtube Channel" title="AHDA Youtube Channel"></a></li>
+            </ul>
+          </li>
+          <li class="footer__download">
+            <a href="#">下載AHDA App</a>
+            <ul class="footer__submenu">
+              <li class="footer__download__google"><a href="#"><img src="/images/footer/android-app@2x.png" alt="Download on Google Play" title="Download on Google Play"></a></li>
+              <li class="footer__download__apple"><a href="#"><img src="/images/footer/app-store@2x.png" alt="Download on App Store" title="Download on App Store"></a></li>
+            </ul>
+          </li>
+        </div>
+        <li class="footer__customerService"><a href="#">AHDA客服中心</a>
+          <ul class="footer__submenu">
+            <li>Email: <a href="mailto:service@ahda.com" target="_blank" >service@ahda.com</a><br>週一至週五 09:00-18:00</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="footer__copyright"><div class="footer__copyright__corporate">OOOO股份有限公司</div> &copy; OOOO Inc. All Rights Reserved.</section>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery.selectric.js"></script>
+  <script>$(function(){$('select').selectric()})</script>
+</body>
+
+</html>
