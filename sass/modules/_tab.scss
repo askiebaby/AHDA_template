@@ -1,38 +1,51 @@
 @import './color';
 
-.tabs {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin-bottom: 45px;
-  .tab {
-    padding: 11px 0;
-    color: $primaryColor;
-    flex-basis: 100%;
-    border: 1px solid $primaryColor;
-    cursor: pointer;
-    &:nth-child(1){
-      border-left: 0;
+.activity {
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 45px;
+
+    @include mediaquery_customized-1095px {
+      max-width: 700px;
     }
-    &:nth-child(2){
-      border-left: 0;
-      border-right: 0;
+
+    .tab {
+      padding: 11px 0;
+      color: $primaryColor;
+      flex-basis: 100%;
+      border: 1px solid $primaryColor;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        border-left: 0;
+      }
+
+      &:nth-child(2) {
+        border-left: 0;
+        border-right: 0;
+      }
+
+      &:nth-child(3) {
+        border-left: 0;
+      }
+
+      &--active {
+        background: $primaryColor;
+        color: $white;
+        padding: 16px 0 14px 0;
+        border-radius: 7px 7px 0 0;
+      }
     }
-    &:nth-child(3){
-      border-left: 0;
+
+    @include mediaquery_customized-1170px {
+      width: 95%;
     }
-    &--active {
-      background: $primaryColor;
-      color: $white;
-      padding: 16px 0 14px 0;
-      border-radius: 7px 7px 0 0; 
+
+    @include mediaquery_iPhone5 {
+      width: 100%;
+      padding: 0 11px;
     }
-  }
-  @include mediaquery_customized-1170px {
-    width: 95%;
-  }
-  @include mediaquery_iPhone5 {
-    width: 100%;
-    padding: 0 11px;
   }
 }

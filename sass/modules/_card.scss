@@ -17,6 +17,9 @@
     max-width: 340px;
     margin-left: 18px;
     margin-bottom: 35px;
+    @include mediaquery_customized-1095px {
+      margin-left: 0;
+    }
 
     @include mediaquery_iPadMini {
       justify-content: space-between;
@@ -107,7 +110,6 @@
       }
     }
   }
-
   .card:nth-child(3n+1) {
     margin-left: 0;
     @include mediaquery_customized-1095px {
@@ -118,7 +120,16 @@
     }
   }
 
+  .card:nth-child(4n+1) {
+    @include mediaquery_customized-1095px {
+      margin-left: 0px;
+    }
+  }
+
   .card:nth-child(2n+2) {
+    @include mediaquery_customized-1095px {
+      margin-left: 18px;
+    }
     @include mediaquery_iPadMini{
       margin-left: 21px;
     }
