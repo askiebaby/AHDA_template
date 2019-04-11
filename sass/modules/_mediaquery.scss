@@ -9,6 +9,7 @@ $width__iPad: 1024px;
 $width__customized-1060px: 1060px;
 $width__customized-1095px: 1095px;
 $width__customized-1170px: 1170px;
+$width__customized-1200px: 1200px;
 $width__pc: 1440px;
 
 @mixin mediaquery_iPhone5 {
@@ -73,6 +74,12 @@ $width__pc: 1440px;
 
 @mixin mediaquery_customized-1170px {
     @media all and (max-width: $width__customized-1170px) {
+        @content;
+    }
+}
+
+@mixin mediaquery_customized-1200px {
+    @media all and (max-width: $width__customized-1200px) {
         @content;
     }
 }

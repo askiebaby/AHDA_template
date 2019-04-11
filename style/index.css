@@ -565,6 +565,25 @@ img {
           background: #ffffff; }
       .carousel__photos__index .dot + .dot {
         margin-left: 7px; }
+  .carousel__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .carousel__card__direction {
+      cursor: pointer; }
+      .carousel__card__direction img {
+        max-width: 40px; }
+      .carousel__card__direction--right {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg); }
+    .carousel__card .cards {
+      margin: 0 32px; }
+    .carousel__card .card {
+      margin-bottom: 0; }
 
 .activity .menu {
   position: relative;
@@ -1222,7 +1241,8 @@ img {
   background: #f4f4f4;
   font-size: 14px; }
   .footer nav {
-    margin-bottom: 80px; }
+    max-width: 1140px;
+    margin: 0 auto 80px; }
     @media all and (max-width: 750px) {
       .footer nav {
         display: -webkit-box;
@@ -1244,7 +1264,6 @@ img {
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start;
-      max-width: 1080px;
       padding-top: 89px; }
       @media all and (max-width: 1095px) {
         .footer nav > ul {

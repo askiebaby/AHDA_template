@@ -89,4 +89,25 @@
       }
     }
   }
+  &__card {
+    display: flex;
+    align-items: center;
+    &__direction{
+      cursor: pointer;
+      img {
+        max-width: 40px;
+      }
+      &--left {}
+      &--right {
+        transform: rotate(180deg);
+      }
+      
+    }
+    .cards {
+      margin: 0 32px;
+    }
+    .card {
+      margin-bottom: 0;
+    }
+  }
 }

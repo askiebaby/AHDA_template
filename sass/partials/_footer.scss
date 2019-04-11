@@ -6,7 +6,8 @@
   font-size: $content-fontSize;
   
   nav {
-    margin-bottom: 80px;
+    max-width: 1140px;
+    margin: 0 auto 80px;
     @include mediaquery_customized-750px{
       display: flex;
       margin-bottom: 47px;
@@ -26,7 +27,6 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      max-width: 1080px;
       padding-top: 89px;
       @include mediaquery_customized-1095px {
         margin-left: 5%;

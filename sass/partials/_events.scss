@@ -1,6 +1,7 @@
 @import '../modules/color';
 @import '../modules/font';
 @import '../modules/mediaquery';
+@import '../modules/card';
 
 .event {
   padding-top: 58px;
@@ -9,11 +10,20 @@
     border-bottom: 1px solid $lightGray;
   }
   .eventBox {
-    max-width: $width__customized-1170px;
+    max-width: $width__customized-1200px;
     margin: auto;
     padding: 40px 0 60px;
     display: flex;
     flex-flow: row nowrap;
+    &--full {
+      flex-direction: column;
+      .event__title {
+        flex-basis: 80px;
+      }
+      .event__content {
+        flex-basis: auto;
+      }
+    }
   }
   .eventBox + .eventBox {
     position: relative;
@@ -32,6 +42,12 @@
       font-size: $eventTitle-fontSize;
       line-height: 1.5;
       margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 16px;
+      border: solid 2px $deepGray;
+      display: inline-block;
+      padding: 7px 20px;
     }
   }
   &__info {
@@ -76,7 +92,39 @@
     }
   }
   &__content {
-    flex-grow: 1;
+    flex-basis: 790px;
+    &__line {
+      display: flex;
+      h3 {
+        flex-basis: 4em;
+        margin-right: 20px;
+        font-size: 16px;
+      }
+      a {
+        text-decoration: underline;
+        color: $lightGray-2;
+      }
+    }
+    &__line + &__line {
+      margin-top: 26px;
+    }
+    &__paragraph {
+      p {
+        line-height: 1.5;
+      }
+      p + p {
+        margin-top: 26px;
+      }
+    }
+    &__paragraph + &__paragraph {
+      margin-top: 46px;
+    }
+    &__map {
+      text-align: center;
+    }
+    &__icon {
+      margin: 8px auto 6px;
+    }
   }
   &__photos {
     &__mainImage {
