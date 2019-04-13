@@ -17,73 +17,61 @@ $width__pc: 1440px;
         @content;
     }
 }
-
 @mixin mediaquery_phone {
     @media all and (max-width: $width__phone) {
         @content;
     }
 }
-
 @mixin mediaquery_iPadMini {
     @media all and (max-width: $width__iPadMini) {
         @content;
     }
 }
-
 @mixin mediaquery_iPad {
     @media all and (max-width: $width__iPad) {
         @content;
     }
 }
-
 @mixin mediaquery_customized-750px {
     @media all and (max-width: $width__customized-750px) {
         @content;
     }
 }
-
 @mixin mediaquery_customized-800px {
     @media all and (max-width: $width__customized-800px) {
         @content;
     }
 }
-
 @mixin mediaquery_customized-880px {
     @media all and (max-width: $width__customized-880px) {
         @content;
     }
 }
-
 @mixin mediaquery_customized-950px {
     @media all and (max-width: $width__customized-950px) {
         @content;
     }
 }
-
 @mixin mediaquery_customized-1060px {
     @media all and (max-width: $width__customized-1060px) {
         @content;
     }
 }
-
 @mixin mediaquery_customized-1095px {
     @media all and (max-width: $width__customized-1095px) {
         @content;
     }
 }
-
 @mixin mediaquery_customized-1170px {
     @media all and (max-width: $width__customized-1170px) {
         @content;
     }
 }
-
 @mixin mediaquery_customized-1200px {
     @media all and (max-width: $width__customized-1200px) {
         @content;
     }
 }
-
 @mixin mediaquery_pc {
     @media all and (max-width: $width__pc) {
         @content;

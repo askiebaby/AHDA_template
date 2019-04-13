@@ -3,7 +3,7 @@
 .carousel {
   position: relative;
   text-align: center;
-  margin-top: 59px;
+  margin-top: 58px;
   > div {
     display: flex;
     justify-content: center;
@@ -91,23 +91,83 @@
   }
   &__card {
     display: flex;
+    justify-content: center;
     align-items: center;
     &__direction{
+      font-size: 0;
       cursor: pointer;
       img {
         max-width: 40px;
       }
-      &--left {}
+      &--left {
+        margin-right: 15px;
+        @include mediaquery_customized-1170px {
+          display: none;
+        }
+      }
       &--right {
+        margin-left: 15px;
         transform: rotate(180deg);
+        @include mediaquery_customized-1170px {
+          position: absolute;
+          right: -20px; // reference to .cards
+        }
+        @include mediaquery_customized-750px {
+          display: none;
+        }
+      }
+      &--bottom {
+        display: none;
+        @include mediaquery_customized-750px {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          cursor: pointer;
+          margin-top: 20px;
+          padding-top: 19px;
+          padding-bottom: 19px;
+        }
+        // @include mediaquery_customized-750px {}
+        img {
+          transform: rotate(-90deg);
+          width: 25px;
+          margin-left: 5px;
+        }
       }
       
     }
     .cards {
-      margin: 0 32px;
+      position: relative;
+      @include mediaquery_customized-1095px {
+        width: auto;
+      }
     }
     .card {
       margin-bottom: 0;
+      &:nth-child(2) {
+        // first card in carousel
+        margin-left: 0;
+        @include mediaquery_customized-750px {
+          margin-left: 18px;
+        }
+        @include mediaquery_phone {
+          margin-left: 0;
+        }
+      }
+      &:nth-child(3n+1) {
+        // second card in carousel
+        margin-left: 18px;
+        @include mediaquery_phone {
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+      }
+      &:nth-child(3) {
+        // third card in carousel
+        @include mediaquery_customized-1170px {
+          display: none;
+        }
+      }
     }
   }
 }

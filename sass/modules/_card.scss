@@ -6,8 +6,15 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-items: center;
     @include mediaquery_customized-1095px {
       justify-content: center;
+      width: 99%;
+      margin: auto;
+    }
+    @include mediaquery_customized-750px {
+      max-width: 700px;
+      margin: auto;
     }
   .card {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
@@ -134,7 +141,7 @@
       margin-left: 21px;
     }
     @include mediaquery_customized-750px {
-      margin: 0 20px 30px;
+      margin: 0 21px 30px;
     }
     @include mediaquery_iPhone5 {
       margin: 0 0 30px;

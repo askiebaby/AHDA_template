@@ -6,19 +6,44 @@
 .event {
   padding-top: 58px;
   color: $deepGray;
+  // @include mediaquery_iPhone5 {
+  //   padding: 58px 6px 0;
+  // }
   .eventBorder {
     border-bottom: 1px solid $lightGray;
   }
   .eventBox {
-    max-width: $width__customized-1200px;
+    max-width: $width__customized-1170px;
     margin: auto;
     padding: 40px 0 60px;
     display: flex;
     flex-flow: row nowrap;
+    @include mediaquery_customized-1170px {
+      max-width: 80%;
+    }
+    @include mediaquery_customized-880px {
+      max-width: 91%;
+    }
+    @include mediaquery_iPadMini {
+      max-width: 93%;
+    }
+    @include mediaquery_phone {
+      flex-flow: column;
+      padding: 20px 10px 27px;
+      max-width: 100%;
+    }
+    @include mediaquery_iPhone5 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
     &--full {
       flex-direction: column;
       .event__title {
         flex-basis: 80px;
+        margin-right: 0;
+        @include mediaquery_customized-750px {
+          text-align: center;
+        }
       }
       .event__content {
         flex-basis: auto;
@@ -35,27 +60,90 @@
       top: 0;
     }
   }
+  .event__main {
+    // must be wrote all name to positioned main photo
+    @include mediaquery_phone {
+      flex-direction: column-reverse;
+      padding-top: 6px;
+    }
+    @include mediaquery_iPhone5 {
+      padding: 7px 5px 24px;
+    }
+    .event__title {
+      @include mediaquery_phone {
+        text-align: left;
+      }
+      @include mediaquery_iPhone5 {
+        width: 85%;
+        margin: 0 auto;
+      }
+    }
+  }
+  &__message {
+    .event__content {
+      @include mediaquery_iPhone5 {
+        width: 85%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .event__map {
+    @include mediaquery_phone {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
   &__title {
-    flex-basis: 320px;
-    margin-right: 145px;
+    margin-right: 7.264957%;
+    flex-basis: 25.213675%;
+    min-width: 25.213675%;
+    @include mediaquery_customized-1170px {
+      flex-basis: 34%;
+      min-width: 34%;
+      margin-right: 4%;
+    }
+    @include mediaquery_customized-950px {
+      flex-basis: 38%;
+      min-width: 38%;
+      margin-right: 3.5%;
+    }
+    @include mediaquery_customized-880px {
+      flex-basis: 40%;
+      min-width: 40%;
+      margin-right: 3%;
+    }
+    @include mediaquery_iPadMini {
+      flex-basis: 38%;
+      min-width: 38%;
+    }
+    @include mediaquery_phone {
+      text-align: center;
+      margin-right: 0;
+    }
+
     &__eventTitle {
       font-size: $eventTitle-fontSize;
       line-height: 1.5;
-      margin-bottom: 30px;
+      margin-bottom: 31px;
     }
     h2 {
-      font-size: 16px;
+      font-size: $eventContent-fontSize;
       border: solid 2px $deepGray;
       display: inline-block;
       padding: 7px 20px;
+      @include mediaquery_phone{
+        margin-bottom: 20px;
+      }
     }
   }
+  &__info + &__info {
+    margin-top: 18px;
+  }
   &__info {
-    margin-bottom: 18px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    font-size: 16px;
+    font-size: $eventContent-fontSize;
     > span {
       margin-right: 19px;
       display: flex;
@@ -77,32 +165,39 @@
     }
     &__tags {
       .tag {
-        padding: 4px 16px 2px;
-        border: 1px solid #000;
+        padding: 2px 16px;
+        border: 1px solid $black;
         border-radius: 50px;
         word-wrap: normal;
         display: inline-block;
-        margin:0 8px 12px 0;
+        margin:0 7px 12px 0;
+        font-size: $content-fontSize;
         &__count {
           padding: 2px;
-          font-size: 16px;
+          font-size: $eventContent-fontSize;
           font-weight: 700;
         }
       }
     }
   }
   &__content {
-    flex-basis: 790px;
+    flex-shrink: 1;
+    line-height: 1.5;
     &__line {
       display: flex;
       h3 {
         flex-basis: 4em;
+        min-width: 4em;
         margin-right: 20px;
-        font-size: 16px;
+        font-size: $eventContent-fontSize;
+        @include mediaquery_phone {
+          margin-right: 26px;
+        }
       }
       a {
         text-decoration: underline;
         color: $lightGray-2;
+        word-break: break-word;
       }
     }
     &__line + &__line {
@@ -110,35 +205,82 @@
     }
     &__paragraph {
       p {
+        font-size: $eventContent-fontSize;
         line-height: 1.5;
       }
       p + p {
         margin-top: 26px;
+        @include mediaquery_iPad {
+          margin-top: 20px;
+        }
       }
     }
     &__paragraph + &__paragraph {
       margin-top: 46px;
+      @include mediaquery_iPad {
+        margin-top: 20px;
+      }
+    }
+    &__photo {
+      font-size: 0;
+      border: 1px solid $deepGray-2;
     }
     &__map {
       text-align: center;
+      font-size: 0;
+      p {
+        font-size: $eventContent-fontSize;
+      }
     }
     &__icon {
-      margin: 8px auto 6px;
+      margin: 14px auto 6px;
     }
   }
   &__photos {
+    font-size: 0;
+    @include mediaquery_phone {
+      margin-bottom: 35px; 
+    }
     &__mainImage {
       margin-bottom: 26px;
+      font-size: 0;
+      @include mediaquery_customized-1170px {
+        margin-bottom: 14px;
+      }
+      @include mediaquery_phone {
+        margin-bottom: 16px;
+      }
       img {
         border-radius: 3px;
       }
     }
     &__otherImages {
+      display: flex;
+      align-items: flex-start;
       img {
         border-radius: 50%;
+        width: 48px;
       }
-      span + span {
-        margin-left: 17px;
+      span {
+        display: inline-block;
+        margin-right: 16px;
+        @include mediaquery_customized-1170px {
+          width: 27px;
+          margin-bottom: 5px;
+          margin-right: 9px;
+        }
+        @include mediaquery_phone {
+          margin-bottom: 0;
+        }
+      }
+      span.event__photos__checked {
+        margin-bottom: 65px;
+        @include mediaquery_phone {
+          margin-bottom: 25px;
+        }
+        img {
+          border: 2px solid $blue;
+        }
       }
     }
   }

@@ -28,8 +28,9 @@
     flex-basis: 12.5%;
     min-width: 190px;
     padding-left: 16px;
+    font-size: 0;
     img {
-      width: 41px;
+      height: 41px;
     }
   }
   &__search {
@@ -87,7 +88,7 @@
         position: absolute;
         width: 100%;
         left: 0;
-        top: 59px;
+        top: 58px;
         background-color: $white;
         text-align: left;
         padding: 0 1px;
@@ -138,6 +139,7 @@
       @include mediaquery_iPadMini {
         display: block;
         padding-right: 10px;
+        font-size: 0;
         cursor: pointer;
       }
       img {
