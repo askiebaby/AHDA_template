@@ -48,6 +48,7 @@
   &__photos {
     position: relative;
     font-size: 0;
+    cursor: pointer;
     @include mediaquery_customized-1060px {
       width: 95%;
       max-width: 1024px;

@@ -172,6 +172,7 @@
         display: inline-block;
         margin:0 7px 12px 0;
         font-size: $content-fontSize;
+        cursor: pointer;
         &__count {
           padding: 2px;
           font-size: $eventContent-fontSize;
@@ -260,6 +261,7 @@
       img {
         border-radius: 50%;
         width: 48px;
+        cursor: pointer;
       }
       span {
         display: inline-block;

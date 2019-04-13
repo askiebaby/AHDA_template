@@ -782,7 +782,8 @@ img {
       word-wrap: normal;
       display: inline-block;
       margin: 0 7px 12px 0;
-      font-size: 14px; }
+      font-size: 14px;
+      cursor: pointer; }
       .event__info__tags .tag__count {
         padding: 2px;
         font-size: 16px;
@@ -858,7 +859,8 @@ img {
       align-items: flex-start; }
       .event__photos__otherImages img {
         border-radius: 50%;
-        width: 48px; }
+        width: 48px;
+        cursor: pointer; }
       .event__photos__otherImages span {
         display: inline-block;
         margin-right: 16px; }
@@ -926,7 +928,8 @@ img {
           padding: 30px 0 30px 30px; } }
   .carousel__photos {
     position: relative;
-    font-size: 0; }
+    font-size: 0;
+    cursor: pointer; }
     @media all and (max-width: 1060px) {
       .carousel__photos {
         width: 95%;

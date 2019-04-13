@@ -530,7 +530,8 @@ img {
           padding: 30px 0 30px 30px; } }
   .carousel__photos {
     position: relative;
-    font-size: 0; }
+    font-size: 0;
+    cursor: pointer; }
     @media all and (max-width: 1060px) {
       .carousel__photos {
         width: 95%;
@@ -695,7 +696,8 @@ img {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    cursor: pointer; }
     @media all and (max-width: 1060px) {
       .activity .menu__hidden--tablet {
         display: none; } }
@@ -711,7 +713,8 @@ img {
         transform: scale(0.8);
         -webkit-transform-origin: center;
         -ms-transform-origin: center;
-        transform-origin: center; }
+        transform-origin: center;
+        cursor: pointer; }
         .activity .menu__show--tablet img {
           max-width: initial; } }
     @media all and (max-width: 576px) {
@@ -725,13 +728,13 @@ img {
         text-align: center;
         margin: 4px auto 0;
         color: #484848;
-        width: 100%; }
+        width: 100%;
+        cursor: pointer; }
         .activity .menu__show--phone img {
           -webkit-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
           transform: rotate(90deg);
           vertical-align: middle;
-          cursor: pointer;
           width: 25px;
           height: 25px; } }
   .activity .menu__event {
@@ -1289,7 +1292,8 @@ img {
           right: 0;
           top: 0;
           background-size: 80%;
-          background-position: top 36px center; } }
+          background-position: top 36px center;
+          height: 80%; } }
       @media all and (max-width: 576px) {
         .promotion__content::before {
           background-size: 100%; } }
