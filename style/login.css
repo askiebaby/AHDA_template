@@ -328,6 +328,14 @@ a {
 img {
   max-width: 100%; }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s; }
+
 .header {
   padding: 8px 0;
   border-bottom: 1px solid #e3e3e3;
@@ -597,8 +605,6 @@ img {
     max-height: 40px;
     line-height: 1.5rem;
     background-color: #ffffff; }
-    .login__input:-webkit-autofill, .login__input:-webkit-autofill:hover, .login__input:-webkit-autofill:focus, .login__input:-webkit-autofill:active {
-      -webkit-box-shadow: 0 0 0 30px white inset !important; }
   .login__input + .login__input {
     margin-top: 8px; }
   .login__email {

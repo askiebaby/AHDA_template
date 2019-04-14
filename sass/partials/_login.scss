@@ -60,12 +60,6 @@
     max-height: 40px;
     line-height: 1.5rem;
     background-color: $white;
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover, 
-    &:-webkit-autofill:focus, 
-    &:-webkit-autofill:active  {
-        -webkit-box-shadow: 0 0 0 30px white inset !important;
-    }
   }
   &__input + &__input {
     margin-top: 8px;
