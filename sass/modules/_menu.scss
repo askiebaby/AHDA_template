@@ -13,6 +13,7 @@
     color: $primaryColor;
     cursor: pointer;
     font-size: $content-fontSize;
+    user-select: none;
     &:hover {
       background: $primaryColor;
       color: $white;
@@ -62,6 +63,7 @@
           transform: scale(.8);
           transform-origin: center;
           cursor: pointer;
+          user-select: none;
           img {
             max-width: initial;
           }
@@ -79,6 +81,7 @@
           color: $deepGray;
           width: 100%;
           cursor: pointer;
+          user-select: none;
           img {
             transform: rotate(90deg);
             vertical-align: middle;

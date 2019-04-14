@@ -313,6 +313,7 @@ template {
 
 body {
   background-color: #02bad3;
+  color: #484848;
   font-family: Helvetica, "segoe ui", "microsoft jhenghei", "microsoft mhei", Arial; }
   body > * {
     background-color: #ffffff; }
@@ -391,7 +392,11 @@ img {
       justify-content: space-between;
       border-radius: 13px;
       padding-left: 5px;
-      padding-right: 5px; }
+      padding-right: 5px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
     .header__search input[type="search"] {
       border: none;
       outline: none;
@@ -895,7 +900,11 @@ img {
     -ms-flex-align: center;
     align-items: center; }
   .carousel__action {
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     @media all and (max-width: 576px) {
       .carousel__action {
         position: absolute; } }
@@ -1188,5 +1197,55 @@ img {
       @media all and (max-width: 750px) {
         .footer__copyright__corporate {
           display: block; } }
+
+.footer__login {
+  margin-top: 171px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+  .footer__login > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 14px; }
+  .footer__login ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0; }
+    .footer__login ul a {
+      color: #484848; }
+    .footer__login ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; }
+      .footer__login ul li:nth-child(2) a {
+        border-left: 0; }
+    .footer__login ul li + li a {
+      padding: 0 20px;
+      border-left: 1px solid #7a7a7a; }
+  .footer__login .footer__copyright {
+    border-top: 0;
+    padding: 0 0 0 24px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1; }
 
 

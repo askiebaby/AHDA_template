@@ -1,10 +1,11 @@
 @import './color';
 
 .button {
-  background: #fff;
+  background-color: #fff;
   outline: 0;
   border: 0;
   cursor: pointer;
+  user-select: none;
   &--primary {
     border: solid 1px $primaryColor;
     color: #02bad3;
@@ -15,7 +16,7 @@
     color: $primaryColor;
     border: solid 2px $primaryColor;
     padding: 7px 24px;
-    background: transparent;
+    background-color: transparent;
   }
 
   &__more {
@@ -38,6 +39,30 @@
     color: $white;
     border: solid 2px $white;
     padding: 9px 24px;
-    background: transparent;
+    background-color: transparent;
+  }
+  &__login {
+    width: 100%;
+    font-size: $content-fontSize;
+    color: $white;
+    padding: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  &__login + &__login {
+    margin-top: 10px;
+  }
+  &__login__submit {
+    background-color: $primaryColor;
+  }
+  &__login__facebook {
+    background-color: $facebookColor;
+    > img {
+      margin-right: 10px;
+    }
   }
 }

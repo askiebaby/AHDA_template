@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登入頁面</title>
+  <link rel="stylesheet" href="./style/login.css?123">
+</head>
+
+<body>
+  <header class="header">
+    <div>
+      <div class="header__logo"><a href="/"><img src="./images/logo_3x.png" alt="AHDA Logo" title="AHDA Logo" /></a>
+      </div>
+      <div class="header__search"><span><input type="search" name="" id="" placeholder="2019屏東燈會"><button
+            type="submit"><img src="./images/icons/search.svg" alt=""></button></span></div>
+      <nav class="header__navbar">
+        <label class="header__navbar__mobile" for="menu"><img src="./images/icons/bar.svg" alt="Menu"
+            title="Menu"></label>
+        <input type="checkbox" class="hiddenButton" id="menu"></input>
+        <ul class="header__navbar__pc">
+          <li><a href="#">刊登活動</a></li>
+          <li><a href="#">登入</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- .header end -->
+  <main class="login">
+    <section class="loginBox">
+      <h2 class="login__mainTitle">登入</h2>
+      <form action="" class="login__form">
+        <section class="login__inputGroup">
+          <input type="email" placeholder="請輸入您的E-Mail" class="login__input login__email" autocomplete="off">
+          <input type="password" placeholder="請輸入密碼" class="login__input login__password">
+        </section>
+        <section class="login__justifySpaceBetween">
+          <div class="login__rememberMe">
+            <input type="checkbox" name="" id="rememberMe" class="login__checkbox">
+            <label for="rememberMe" class="login__fakeCheckbox"></label>
+            <label for="rememberMe">記住我</label>
+          </div>
+          <div><a href="#" class="">忘記密碼</a></div>
+        </section>
+        <div>
+          <button type="submit" class="button button__login button__login__submit">登入</button>
+          <button class="button button__login button__login__facebook"><img src="./images/icons/facebook-logo-white.svg"
+              alt="Facebook Login"> 使用Facebook帳號登入</button>
+        </div>
+        <p class="login__seperator">-或-</p>
+        <div>
+          <h3><a href="#">新用戶？</a></h3>
+          <button class="button button__login button__login__submit">註冊</button>
+          <p class="login__agreement">註冊登入即表示您同意我們的<a href="#">隱私政策</a>及<a href="#">服務條款</a></p>
+        </div>
+      </form>
+    </section>
+    <section class="loginBox login__memo">
+      <h4>貼心小叮嚀</h4>
+      <p>註冊成為會員，系統將可儲存您的使用紀錄，您也能使用刊登功能。</p>
+    </section>
+    <footer class="footer__login">
+      <div>
+        <nav>
+          <ul>
+            <li class="footer__logo"><a href="/"><img src="./images/logo_3x.png" alt="AHDA Logo"
+                  title="AHDA Logo" /></a>
+            </li>
+            <li><a href="#">協助</a></li>
+            <li><a href="#">隱私政策</a></li>
+            <li><a href="#">使用條款</a></li>
+            <li class="footer__copyright">AHDA Lab &copy; 2019</li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </main>
+  <!-- login end -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery.selectric.js"></script>
+  <script>
+    $(function () {
+      $('select').selectric()
+    })
+  </script>
+</body>
+
+</html>

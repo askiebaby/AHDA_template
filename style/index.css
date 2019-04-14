@@ -313,6 +313,7 @@ template {
 
 body {
   background-color: #02bad3;
+  color: #484848;
   font-family: Helvetica, "segoe ui", "microsoft jhenghei", "microsoft mhei", Arial; }
   body > * {
     background-color: #ffffff; }
@@ -391,7 +392,11 @@ img {
       justify-content: space-between;
       border-radius: 13px;
       padding-left: 5px;
-      padding-right: 5px; }
+      padding-right: 5px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
     .header__search input[type="search"] {
       border: none;
       outline: none;
@@ -497,7 +502,11 @@ img {
     -ms-flex-align: center;
     align-items: center; }
   .carousel__action {
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     @media all and (max-width: 576px) {
       .carousel__action {
         position: absolute; } }
@@ -656,7 +665,11 @@ img {
   border: 2px solid #02bad3;
   color: #02bad3;
   cursor: pointer;
-  font-size: 14px; }
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .activity .menu:hover {
     background: #02bad3;
     color: #ffffff; }
@@ -714,7 +727,11 @@ img {
         -webkit-transform-origin: center;
         -ms-transform-origin: center;
         transform-origin: center;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
         .activity .menu__show--tablet img {
           max-width: initial; } }
     @media all and (max-width: 576px) {
@@ -729,7 +746,11 @@ img {
         margin: 4px auto 0;
         color: #484848;
         width: 100%;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
         .activity .menu__show--phone img {
           -webkit-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
@@ -994,10 +1015,14 @@ img {
       margin: 0 0 30px; } }
 
 .button {
-  background: #fff;
+  background-color: #fff;
   outline: 0;
   border: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .button--primary {
     border: solid 1px #02bad3;
     color: #02bad3;
@@ -1007,7 +1032,7 @@ img {
     color: #02bad3;
     border: solid 2px #02bad3;
     padding: 7px 24px;
-    background: transparent; }
+    background-color: transparent; }
   .button__more {
     padding: 4px 32px 4px 14px;
     position: relative; }
@@ -1027,7 +1052,32 @@ img {
     color: #ffffff;
     border: solid 2px #ffffff;
     padding: 9px 24px;
-    background: transparent; }
+    background-color: transparent; }
+  .button__login {
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 9px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 40px;
+    border-radius: 2px;
+    cursor: pointer; }
+  .button__login + .button__login {
+    margin-top: 10px; }
+  .button__login__submit {
+    background-color: #02bad3; }
+  .button__login__facebook {
+    background-color: #395590; }
+    .button__login__facebook > img {
+      margin-right: 10px; }
 
 .activity .tabs {
   display: -webkit-box;
@@ -1048,7 +1098,11 @@ img {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     border: 1px solid #02bad3;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     .activity .tabs .tab:nth-child(1) {
       border-left: 0; }
     .activity .tabs .tab:nth-child(2) {
@@ -1454,6 +1508,56 @@ img {
       @media all and (max-width: 750px) {
         .footer__copyright__corporate {
           display: block; } }
+
+.footer__login {
+  margin-top: 171px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+  .footer__login > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 14px; }
+  .footer__login ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0; }
+    .footer__login ul a {
+      color: #484848; }
+    .footer__login ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; }
+      .footer__login ul li:nth-child(2) a {
+        border-left: 0; }
+    .footer__login ul li + li a {
+      padding: 0 20px;
+      border-left: 1px solid #7a7a7a; }
+  .footer__login .footer__copyright {
+    border-top: 0;
+    padding: 0 0 0 24px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1; }
 
 .selectric-wrapper {
   position: relative;

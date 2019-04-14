@@ -1,0 +1,128 @@
+@import '../modules/color';
+@import '../modules/font';
+@import '../modules/mediaquery';
+@import '../modules/button';
+
+.login {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 95px;
+  a {
+    color: $primaryColor;
+  }
+  :placeholder {
+    color: $placeholderColor;
+    
+  }
+  &Box {
+    background-color: $white-3;
+    max-width: 424px;
+    padding: 20px 56px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    > h3, h4, a, p {
+      font-size: $description-fontSize;
+      font-weight: normal;
+      line-height: 1.25;
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 9px;
+    }
+  }
+  &Box + &Box {
+    margin: 10px auto 0;
+  }
+  &__memo {
+    text-align: left;
+    h4, p {
+      line-height: 1.83;
+    }
+  }
+  &__mainTitle {
+    font-size: $mainTitle-fontSize;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__inputGroup {
+    // padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  &__input {
+    padding: 9px 11px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 2px;
+    font-size: $content-fontSize;
+    color: $inputColor;
+    max-height: 40px;
+    line-height: 1.5rem;
+    background-color: $white;
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus, 
+    &:-webkit-autofill:active  {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+  }
+  &__input + &__input {
+    margin-top: 8px;
+  }
+  &__email {
+    letter-spacing: 1px;
+  }
+  &__password {
+    font-size: 2em;
+    letter-spacing: .1em;
+    &:placeholder-shown {
+      font-size: 14px;
+    }
+  }
+  &__rememberMe {
+    display: flex;
+    align-items: center;
+    user-select: none;
+  }
+  &__fakeCheckbox {
+    display: inline-block;
+    font-size: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $lightGray;
+    background-color: $white;
+    box-shadow: inset 0px 0px 0px 2px $white;
+    border-radius: 50%;
+    cursor: pointer;
+    & ~ label {
+      line-height: 1.5;
+      cursor: pointer;
+      padding: 0 10px 0 5px;
+    }
+  }
+  &__checkbox {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    &:checked {
+      & ~ .login__fakeCheckbox{
+        background-color: $deepGray;
+      }
+    }
+  }
+  &__justifySpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $description-fontSize;
+    margin-bottom: 25px;
+  }
+  &__seperator {
+    text-align: center;
+    padding: 18px 0;
+  }
+  &__agreement {
+    margin-top: 10px;
+  }
+}
