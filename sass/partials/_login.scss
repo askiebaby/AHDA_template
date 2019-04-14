@@ -7,13 +7,14 @@
   position: relative;
   min-height: 100vh;
   padding-top: 95px;
+
   a {
     color: $primaryColor;
   }
   :placeholder {
     color: $placeholderColor;
-    
   }
+
   &Box {
     background-color: $white-3;
     max-width: 424px;
@@ -21,6 +22,10 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    @include mediaquery_phone {
+      max-width: 290px;
+      padding: 20px 11px;
+    }
     > h3, h4, a, p {
       font-size: $description-fontSize;
       font-weight: normal;
@@ -46,7 +51,6 @@
     margin-bottom: 20px;
   }
   &__inputGroup {
-    // padding: 10px 0;
     margin-bottom: 10px;
   }
   &__input {

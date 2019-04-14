@@ -575,6 +575,10 @@ input:-webkit-autofill:active {
     margin-left: auto;
     margin-right: auto;
     text-align: center; }
+    @media all and (max-width: 576px) {
+      .loginBox {
+        max-width: 290px;
+        padding: 20px 11px; } }
     .loginBox > h3, .loginBox h4, .loginBox a, .loginBox p {
       font-size: 12px;
       font-weight: normal;
@@ -809,7 +813,7 @@ input:-webkit-autofill:active {
           display: block; } }
 
 .footer__login {
-  margin-top: 171px;
+  margin-top: 140px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -837,6 +841,10 @@ input:-webkit-autofill:active {
     justify-content: center;
     padding-left: 0;
     margin: 0; }
+    @media all and (max-width: 576px) {
+      .footer__login ul {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
     .footer__login ul a {
       color: #484848; }
     .footer__login ul li {
@@ -851,12 +859,25 @@ input:-webkit-autofill:active {
     .footer__login ul li + li a {
       padding: 0 20px;
       border-left: 1px solid #7a7a7a; }
+      @media all and (max-width: 576px) {
+        .footer__login ul li + li a {
+          padding: 0 15px; } }
   .footer__login .footer__copyright {
     border-top: 0;
     padding: 0 0 0 24px;
     margin: 0;
     font-size: 14px;
     line-height: 1; }
+    @media all and (max-width: 576px) {
+      .footer__login .footer__copyright {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-left: 0;
+        position: relative;
+        top: -25px; } }
 
 .selectric-wrapper {
   position: relative;
