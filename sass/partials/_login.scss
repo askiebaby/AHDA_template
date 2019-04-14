@@ -7,6 +7,67 @@
   position: relative;
   min-height: 100vh;
   padding-top: 95px;
+  &__forgotPassword {
+    .loginBox{
+      padding: 20px 56px 50px;
+      @include mediaquery_phone {
+        max-width: 290px;
+        padding: 20px 11px;
+      }
+    }
+    &--sent {
+      .loginBox{
+        padding: 20px 56px;
+        @include mediaquery_phone {
+          max-width: 290px;
+          padding: 20px 11px;
+        }
+      }
+      .login__forgotPassword__status {
+        font-size: $content-fontSize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        img {
+          margin-left: 8px;
+        }
+      }
+      .login__forgotPassword__message {
+        text-align: left;
+        font-size: $content-fontSize;
+        line-height: 1.5;
+        width: 70%;
+        margin: auto;
+        word-break: break-all;
+      }
+      .status {
+        &--success {
+          & ~ .login__forgotPassword__message {
+            padding: 24px 0;
+          }
+        }
+        &--error {
+          & ~ .login__forgotPassword__message {
+            padding: 34px 0 35px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .footer__login {
+      margin-top: 240px;
+    }
+    .login__forgotPassword__input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 35px;
+      p {
+        font-size: $content-fontSize;
+      }
+    }
+  }
 
   a {
     color: $primaryColor;
@@ -33,7 +94,7 @@
     }
     h3 {
       text-align: center;
-      margin-bottom: 9px;
+      margin: 9px 0;
     }
   }
   &Box + &Box {
@@ -49,6 +110,12 @@
     font-size: $mainTitle-fontSize;
     text-align: center;
     margin-bottom: 20px;
+  }
+  .login__subTitle {
+    font-size: $content-fontSize;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-top: 15px;
   }
   &__inputGroup {
     margin-bottom: 10px;
@@ -67,6 +134,14 @@
   }
   &__input + &__input {
     margin-top: 8px;
+  }
+  &__testCode {
+    width: 60%;
+    margin-left: 5px;
+    max-width: 185px;
+    @include mediaquery_phone {
+      width: 65%;
+    }
   }
   &__email {
     letter-spacing: 1px;
@@ -118,9 +193,70 @@
   }
   &__seperator {
     text-align: center;
-    padding: 18px 0;
+    padding-top: 18px;
   }
   &__agreement {
     margin-top: 10px;
+  }
+
+  &__selectGroup {
+    > div {
+      display: flex;
+      justify-content: center;
+    }
+    > div:first-child {
+      align-items: center;
+    }
+    > div:last-child {
+      align-items: flex-start;
+      margin-bottom: 50px;
+    }
+    > div + div {
+      margin-top: 20px;
+    }
+    &__icon {
+      font-size: 0;
+      margin-right: 5px;
+      img {
+        min-width: 22px;
+      }
+    }
+    p {
+      text-align: left;
+      font-size: $content-fontSize;
+      padding-left: 10px;
+      line-height: 1.5;
+    }
+    .selectric {
+      background: $white-3;
+      .button {
+        background: $white-3;
+      }
+    }
+    .selectric-wrapper {
+      width: 100%;
+    }
+    .selectric-items {
+      box-shadow: none;
+    }
+    .selectric-open {
+      .selectric {
+        background: $white;
+        border-radius: 2px;
+        box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 2px 2px 0 0;
+        .button {
+          background: $white;
+        }
+      }
+      .selectric-items {
+        // position: relative;
+        z-index: 1;
+        margin-top: -3px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 2px 2px;
+      }
+    }
+    
   }
 }

@@ -251,7 +251,9 @@
       }
     }
   }
-
+  .footer__logo img {
+    width: 41px;
+  }
   .footer__copyright {
     border-top: 0;
     padding: 0 0 0 24px;
@@ -263,7 +265,7 @@
       justify-content: center;
       padding-left: 0;
       position: relative;
-      top: -25px;
+      top: -15px;
     }
   }
 }

@@ -1567,6 +1567,8 @@ input:-webkit-autofill:active {
       @media all and (max-width: 576px) {
         .footer__login ul li + li a {
           padding: 0 15px; } }
+  .footer__login .footer__logo img {
+    width: 41px; }
   .footer__login .footer__copyright {
     border-top: 0;
     padding: 0 0 0 24px;
@@ -1582,7 +1584,7 @@ input:-webkit-autofill:active {
         justify-content: center;
         padding-left: 0;
         position: relative;
-        top: -25px; } }
+        top: -15px; } }
 
 .selectric-wrapper {
   position: relative;

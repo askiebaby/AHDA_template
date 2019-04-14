@@ -564,6 +564,59 @@ input:-webkit-autofill:active {
   position: relative;
   min-height: 100vh;
   padding-top: 95px; }
+  .login__forgotPassword .loginBox {
+    padding: 20px 56px 50px; }
+    @media all and (max-width: 576px) {
+      .login__forgotPassword .loginBox {
+        max-width: 290px;
+        padding: 20px 11px; } }
+  .login__forgotPassword--sent .loginBox {
+    padding: 20px 56px; }
+    @media all and (max-width: 576px) {
+      .login__forgotPassword--sent .loginBox {
+        max-width: 290px;
+        padding: 20px 11px; } }
+  .login__forgotPassword--sent .login__forgotPassword__status {
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 15px; }
+    .login__forgotPassword--sent .login__forgotPassword__status img {
+      margin-left: 8px; }
+  .login__forgotPassword--sent .login__forgotPassword__message {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 70%;
+    margin: auto;
+    word-break: break-all; }
+  .login__forgotPassword--sent .status--success ~ .login__forgotPassword__message {
+    padding: 24px 0; }
+  .login__forgotPassword--sent .status--error ~ .login__forgotPassword__message {
+    padding: 34px 0 35px;
+    text-align: center; }
+  .login__forgotPassword .footer__login {
+    margin-top: 240px; }
+  .login__forgotPassword .login__forgotPassword__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 35px; }
+    .login__forgotPassword .login__forgotPassword__input p {
+      font-size: 14px; }
   .login a {
     color: #02bad3; }
   .login :placeholder {
@@ -585,7 +638,7 @@ input:-webkit-autofill:active {
       line-height: 1.25; }
     .loginBox h3 {
       text-align: center;
-      margin-bottom: 9px; }
+      margin: 9px 0; }
   .loginBox + .loginBox {
     margin: 10px auto 0; }
   .login__memo {
@@ -596,6 +649,11 @@ input:-webkit-autofill:active {
     font-size: 18px;
     text-align: center;
     margin-bottom: 20px; }
+  .login .login__subTitle {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-top: 15px; }
   .login__inputGroup {
     margin-bottom: 10px; }
   .login__input {
@@ -611,6 +669,13 @@ input:-webkit-autofill:active {
     background-color: #ffffff; }
   .login__input + .login__input {
     margin-top: 8px; }
+  .login__testCode {
+    width: 60%;
+    margin-left: 5px;
+    max-width: 185px; }
+    @media all and (max-width: 576px) {
+      .login__testCode {
+        width: 65%; } }
   .login__email {
     letter-spacing: 1px; }
   .login__password {
@@ -664,9 +729,60 @@ input:-webkit-autofill:active {
     margin-bottom: 25px; }
   .login__seperator {
     text-align: center;
-    padding: 18px 0; }
+    padding-top: 18px; }
   .login__agreement {
     margin-top: 10px; }
+  .login__selectGroup > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .login__selectGroup > div:first-child {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .login__selectGroup > div:last-child {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 50px; }
+  .login__selectGroup > div + div {
+    margin-top: 20px; }
+  .login__selectGroup__icon {
+    font-size: 0;
+    margin-right: 5px; }
+    .login__selectGroup__icon img {
+      min-width: 22px; }
+  .login__selectGroup p {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 1.5; }
+  .login__selectGroup .selectric {
+    background: #f6f6f6; }
+    .login__selectGroup .selectric .button {
+      background: #f6f6f6; }
+  .login__selectGroup .selectric-wrapper {
+    width: 100%; }
+  .login__selectGroup .selectric-items {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .login__selectGroup .selectric-open .selectric {
+    background: #ffffff;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2px 2px 0 0; }
+    .login__selectGroup .selectric-open .selectric .button {
+      background: #ffffff; }
+  .login__selectGroup .selectric-open .selectric-items {
+    z-index: 1;
+    margin-top: -3px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 2px 2px; }
 
 .footer {
   background: #f4f4f4;
@@ -862,6 +978,8 @@ input:-webkit-autofill:active {
       @media all and (max-width: 576px) {
         .footer__login ul li + li a {
           padding: 0 15px; } }
+  .footer__login .footer__logo img {
+    width: 41px; }
   .footer__login .footer__copyright {
     border-top: 0;
     padding: 0 0 0 24px;
@@ -877,7 +995,7 @@ input:-webkit-autofill:active {
         justify-content: center;
         padding-left: 0;
         position: relative;
-        top: -25px; } }
+        top: -15px; } }
 
 .selectric-wrapper {
   position: relative;
