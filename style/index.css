@@ -767,10 +767,10 @@ input:-webkit-autofill:active {
           width: 25px;
           height: 25px; } }
   .activity .menu__event {
-    background: url(../../images/icons/hot-event-blue.svg) no-repeat center bottom 38px transparent;
+    background: url(./images/icons/hot-event-blue.svg) no-repeat center bottom 38px transparent;
     background-size: 22px; }
     .activity .menu__event:hover {
-      background: url(../../images/icons/hot-event-white.svg) no-repeat center bottom 38px #02bad3;
+      background: url(./images/icons/hot-event-white.svg) no-repeat center bottom 38px #02bad3;
       background-size: 22px; }
       @media all and (max-width: 800px) {
         .activity .menu__event:hover {
@@ -779,10 +779,10 @@ input:-webkit-autofill:active {
       .activity .menu__event {
         background-position-y: 7px; } }
   .activity .menu__charity {
-    background: url(../../images/icons/charity-blue.svg) no-repeat center bottom 37px transparent;
+    background: url(./images/icons/charity-blue.svg) no-repeat center bottom 37px transparent;
     background-size: 35px; }
     .activity .menu__charity:hover {
-      background: url(../../images/icons/charity-white.svg) no-repeat center bottom 37px #02bad3;
+      background: url(./images/icons/charity-white.svg) no-repeat center bottom 37px #02bad3;
       background-size: 35px; }
       @media all and (max-width: 800px) {
         .activity .menu__charity:hover {
@@ -791,10 +791,10 @@ input:-webkit-autofill:active {
       .activity .menu__charity {
         background-position-y: 12px; } }
   .activity .menu__discount {
-    background: url(../../images/icons/discount-blue.svg) no-repeat center bottom 37px transparent;
+    background: url(./images/icons/discount-blue.svg) no-repeat center bottom 37px transparent;
     background-size: 35px; }
     .activity .menu__discount:hover {
-      background: url(../../images/icons/discount-white.svg) no-repeat center bottom 37px #02bad3;
+      background: url(./images/icons/discount-white.svg) no-repeat center bottom 37px #02bad3;
       background-size: 35px; }
       @media all and (max-width: 800px) {
         .activity .menu__discount:hover {
@@ -803,10 +803,10 @@ input:-webkit-autofill:active {
       .activity .menu__discount {
         background-position-y: 10px; } }
   .activity .menu__fun {
-    background: url(../../images/icons/hot-air-balloon-blue.svg) no-repeat center bottom 36px transparent;
+    background: url(./images/icons/hot-air-balloon-blue.svg) no-repeat center bottom 36px transparent;
     background-size: 30px; }
     .activity .menu__fun:hover {
-      background: url(../../images/icons/hot-air-ballon-white.svg) no-repeat center bottom 36px #02bad3;
+      background: url(./images/icons/hot-air-ballon-white.svg) no-repeat center bottom 36px #02bad3;
       background-size: 30px; }
       @media all and (max-width: 800px) {
         .activity .menu__fun:hover {
@@ -815,10 +815,10 @@ input:-webkit-autofill:active {
       .activity .menu__fun {
         background-position-y: 10px; } }
   .activity .menu__news {
-    background: url(../../images/icons/rocket-blue.svg) no-repeat center bottom 36px transparent;
+    background: url(./images/icons/rocket-blue.svg) no-repeat center bottom 36px transparent;
     background-size: 35px; }
     .activity .menu__news:hover {
-      background: url(../../images/icons/rocket-white.svg) no-repeat center bottom 36px #02bad3;
+      background: url(./images/icons/rocket-white.svg) no-repeat center bottom 36px #02bad3;
       background-size: 35px; }
       @media all and (max-width: 800px) {
         .activity .menu__news:hover {
@@ -827,10 +827,10 @@ input:-webkit-autofill:active {
       .activity .menu__news {
         background-position-y: 12px; } }
   .activity .menu__ordinary {
-    background: url(../../images/icons/person-blue.svg) no-repeat center bottom 37px transparent;
+    background: url(./images/icons/person-blue.svg) no-repeat center bottom 37px transparent;
     background-size: 32px; }
     .activity .menu__ordinary:hover {
-      background: url(../../images/icons/person-white.svg) no-repeat center bottom 37px #02bad3;
+      background: url(./images/icons/person-white.svg) no-repeat center bottom 37px #02bad3;
       background-size: 32px; }
       @media all and (max-width: 800px) {
         .activity .menu__ordinary:hover {
@@ -839,10 +839,10 @@ input:-webkit-autofill:active {
       .activity .menu__ordinary {
         background-position-y: 9px; } }
   .activity .menu__family {
-    background: url(../../images/icons/infant-blue.svg) no-repeat center bottom 37px transparent;
+    background: url(./images/icons/infant-blue.svg) no-repeat center bottom 37px transparent;
     background-size: 36px; }
     .activity .menu__family:hover {
-      background: url(../../images/icons/infant-white.svg) no-repeat center bottom 37px #02bad3;
+      background: url(./images/icons/infant-white.svg) no-repeat center bottom 37px #02bad3;
       background-size: 36px; }
       @media all and (max-width: 800px) {
         .activity .menu__family:hover {
@@ -851,10 +851,10 @@ input:-webkit-autofill:active {
       .activity .menu__family {
         background-position-y: 12px; } }
   .activity .menu__art {
-    background: url(../../images/icons/guitar-blue.svg) no-repeat center bottom 37px transparent;
+    background: url(./images/icons/guitar-blue.svg) no-repeat center bottom 37px transparent;
     background-size: 36px; }
     .activity .menu__art:hover {
-      background: url(../../images/icons/guitar-white.svg) no-repeat center bottom 37px #02bad3;
+      background: url(./images/icons/guitar-white.svg) no-repeat center bottom 37px #02bad3;
       background-size: 36px; }
       @media all and (max-width: 800px) {
         .activity .menu__art:hover {
@@ -863,10 +863,10 @@ input:-webkit-autofill:active {
       .activity .menu__art {
         background-position-y: 10px; } }
   .activity .menu__fitness {
-    background: url(../../images/icons/fitness-blue.svg) no-repeat center bottom 40px transparent;
+    background: url(./images/icons/fitness-blue.svg) no-repeat center bottom 40px transparent;
     background-size: 38px; }
     .activity .menu__fitness:hover {
-      background: url(../../images/icons/fitness-white.svg) no-repeat center bottom 40px #02bad3;
+      background: url(./images/icons/fitness-white.svg) no-repeat center bottom 40px #02bad3;
       background-size: 38px; }
       @media all and (max-width: 800px) {
         .activity .menu__fitness:hover {
@@ -875,10 +875,10 @@ input:-webkit-autofill:active {
       .activity .menu__fitness {
         background-position-y: 10px; } }
   .activity .menu__food {
-    background: url(../../images/icons/food-blue.svg) no-repeat center bottom 36px transparent;
+    background: url(./images/icons/food-blue.svg) no-repeat center bottom 36px transparent;
     background-size: 27px; }
     .activity .menu__food:hover {
-      background: url(../../images/icons/food-white.svg) no-repeat center bottom 36px #02bad3;
+      background: url(./images/icons/food-white.svg) no-repeat center bottom 36px #02bad3;
       background-size: 27px; }
       @media all and (max-width: 800px) {
         .activity .menu__food:hover {
@@ -995,13 +995,13 @@ input:-webkit-autofill:active {
             margin-right: 3px;
             vertical-align: middle; }
       .cards .card__content__date {
-        background: url(../../images/icons/calendar.svg) no-repeat left center;
+        background: url(./images/icons/calendar.svg) no-repeat left center;
         background-size: 11px; }
       .cards .card__content__country {
-        background: url(../../images/icons/mark-solid.svg) no-repeat left center;
+        background: url(./images/icons/mark-solid.svg) no-repeat left center;
         background-size: 10px; }
       .cards .card__content__location {
-        background: url(../../images/icons/star.svg) no-repeat left center;
+        background: url(./images/icons/star.svg) no-repeat left center;
         background-size: 12px;
         max-width: 33.33333%; }
     .cards .card__more .card__photo {
@@ -1350,7 +1350,7 @@ input:-webkit-autofill:active {
       position: absolute;
       left: 2%;
       bottom: 0;
-      background: url(../../images/cta_banner_bg.svg) no-repeat left bottom transparent;
+      background: url(./images/cta_banner_bg.svg) no-repeat left bottom transparent;
       background-size: contain;
       width: 60%;
       height: 102%; }
