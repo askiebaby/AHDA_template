@@ -1518,12 +1518,18 @@ input:-webkit-autofill:active {
           display: block; } }
 
 .footer__login {
+  position: absolute;
+  bottom: 20px;
   margin-top: 140px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center; }
+  @media all and (max-height: 768px) {
+    .footer__login {
+      position: relative;
+      bottom: auto; } }
   .footer__login > div {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -77,3 +77,9 @@ $width__pc: 1440px;
         @content;
     }
 }
+
+@mixin mediaquery_height-768px {
+    @media all and (max-height: 768px) {
+        @content;
+    }
+}

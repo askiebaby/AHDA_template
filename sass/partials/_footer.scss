@@ -200,12 +200,16 @@
 }
 
 .footer__login {
-  // position: absolute;
-  // bottom: 20px;
+  position: absolute;
+  bottom: 20px;
   margin-top: 140px;
   width: 100%;
   display: flex;
   text-align: center;
+  @include mediaquery_height-768px {
+    position: relative;
+    bottom: auto;
+  }
 
   > div {
     display: flex;
