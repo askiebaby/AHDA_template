@@ -648,7 +648,9 @@ input:-webkit-autofill:active {
   padding-top: 58px;
   color: #484848; }
   .event .eventBorder {
-    border-bottom: 1px solid #e3e3e3; }
+    border-bottom: 1px solid #e3e3e3;
+    margin-left: 5px;
+    margin-right: 5px; }
   .event .eventBox {
     max-width: 1170px;
     margin: auto;
@@ -675,12 +677,12 @@ input:-webkit-autofill:active {
         -webkit-box-direction: normal;
         -ms-flex-flow: column;
         flex-flow: column;
-        padding: 20px 10px 27px;
+        padding: 20px 0 27px;
         max-width: 100%; } }
     @media all and (max-width: 430px) {
       .event .eventBox {
-        padding-left: 5px;
-        padding-right: 5px; } }
+        padding-left: 0;
+        padding-right: 0; } }
     .event .eventBox--full {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -713,15 +715,28 @@ input:-webkit-autofill:active {
       padding-top: 6px; } }
   @media all and (max-width: 430px) {
     .event .event__main {
-      padding: 7px 5px 24px; } }
+      padding: 7px 0 24px; } }
+  .event .event__main .event__title {
+    position: relative; }
+    @media all and (max-width: 576px) {
+      .event .event__main .event__title {
+        text-align: left; }
+        .event .event__main .event__title::before {
+          content: '';
+          border-top: 1px solid #e3e3e3;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 0; } }
+    @media all and (max-width: 576px) {
+      .event .event__main .event__title .event__title__eventTitle {
+        padding-top: 37px; } }
+    @media all and (max-width: 576px) {
+      .event .event__main .event__title .event__title__eventTitle, .event .event__main .event__title .event__info {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto; } }
   @media all and (max-width: 576px) {
-    .event .event__main .event__title {
-      text-align: left; } }
-  @media all and (max-width: 430px) {
-    .event .event__main .event__title {
-      width: 85%;
-      margin: 0 auto; } }
-  @media all and (max-width: 430px) {
     .event__message .event__content {
       width: 85%;
       margin: 0 auto; } }

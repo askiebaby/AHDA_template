@@ -6,11 +6,10 @@
 .event {
   padding-top: 58px;
   color: $deepGray;
-  // @include mediaquery_iPhone5 {
-  //   padding: 58px 6px 0;
-  // }
   .eventBorder {
     border-bottom: 1px solid $lightGray;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .eventBox {
     max-width: $width__customized-1170px;
@@ -29,12 +28,12 @@
     }
     @include mediaquery_phone {
       flex-flow: column;
-      padding: 20px 10px 27px;
+      padding: 20px 0 27px;
       max-width: 100%;
     }
     @include mediaquery_iPhone5 {
-      padding-left: 5px;
-      padding-right: 5px;
+      padding-left: 0;
+      padding-right: 0;
     }
     &--full {
       flex-direction: column;
@@ -67,21 +66,38 @@
       padding-top: 6px;
     }
     @include mediaquery_iPhone5 {
-      padding: 7px 5px 24px;
+      padding: 7px 0 24px;
     }
     .event__title {
+      position: relative;
       @include mediaquery_phone {
         text-align: left;
+        &::before {
+          content: '';
+          border-top: 1px solid $lightGray;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
       }
-      @include mediaquery_iPhone5 {
-        width: 85%;
-        margin: 0 auto;
+      .event__title__eventTitle {
+        @include mediaquery_phone {
+          padding-top: 37px;
+        }
+      }
+      .event__title__eventTitle, .event__info {
+        @include mediaquery_phone {
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
   }
   &__message {
     .event__content {
-      @include mediaquery_iPhone5 {
+      @include mediaquery_phone {
         width: 85%;
         margin: 0 auto;
       }
