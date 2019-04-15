@@ -10,9 +10,11 @@
   &__forgotPassword {
     .loginBox{
       padding: 20px 56px 50px;
+      margin-top: 105px;
       @include mediaquery_phone {
         max-width: 290px;
         padding: 20px 11px;
+        margin-top: 0;
       }
     }
     &--sent {
@@ -41,19 +43,6 @@
         margin: auto;
         word-break: break-all;
       }
-      .status {
-        &--success {
-          & ~ .login__forgotPassword__message {
-            padding: 24px 0;
-          }
-        }
-        &--error {
-          & ~ .login__forgotPassword__message {
-            padding: 34px 0 35px;
-            text-align: center;
-          }
-        }
-      }
     }
     .footer__login {
       margin-top: 240px;
@@ -68,6 +57,62 @@
       }
     }
   }
+  &__register {
+    .loginBox {
+      margin-top: 60px;
+    }
+    .footer__login {
+      margin-top: 182px;
+    }
+    .login__register__status {
+      display: none;
+    }
+    .login__agreement {
+      margin-top: 43px;
+    }
+  }
+  .status {
+    &--success {
+      & ~ .login__forgotPassword__message {
+        padding: 24px 0;
+      }
+    }
+    &--error {
+      & ~ .login__forgotPassword__message {
+        padding: 34px 0 35px;
+        text-align: center;
+      }
+      .login__register__status {
+        display: flex;
+        background-color: $alertBgColor;
+        color: $alertFontColor;
+        justify-content: center;
+        padding: 6px 0;
+        position: absolute;
+        top: -42px;
+        left: 0;
+        width: 100%;
+        img {
+          margin-left: 4px;
+        }
+      }
+      .login__password__again {
+        position: relative;
+        &::placeholder {
+          color: $alertFontColor;
+        }
+        ~ .error {
+          background: url(../../images/icons/status-error.svg) no-repeat;
+          width: 16px;
+          display: inline-block;
+          height: 16px;
+          position: absolute;
+          right: 11px;
+          top: 13px;
+        }
+      }
+    }
+  }
 
   a {
     color: $primaryColor;
@@ -77,6 +122,7 @@
   }
 
   &Box {
+    position: relative;
     background-color: $white-3;
     max-width: 424px;
     padding: 20px 56px;
@@ -147,10 +193,14 @@
     letter-spacing: 1px;
   }
   &__password {
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: .1em;
     &:placeholder-shown {
       font-size: 14px;
+    }
+    &__check {
+      position: relative;
+      margin-top: 10px;
     }
   }
   &__rememberMe {
@@ -209,7 +259,7 @@
     }
     > div:last-child {
       align-items: flex-start;
-      margin-bottom: 50px;
+      margin-bottom: 52px;
     }
     > div + div {
       margin-top: 20px;
@@ -241,16 +291,15 @@
     }
     .selectric-open {
       .selectric {
-        background: $white;
+        background-color: $white;
         border-radius: 2px;
         box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
         border-radius: 2px 2px 0 0;
         .button {
-          background: $white;
+          background-color: $white;
         }
       }
       .selectric-items {
-        // position: relative;
         z-index: 1;
         margin-top: -3px;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
@@ -258,5 +307,35 @@
       }
     }
     
+    &__register {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 45px;
+      > div {
+        // flex-basis: 49%;
+        flex-grow: 1;
+        &:first-child {
+          margin-right: 7px;
+        }
+      }
+      .selectric-wrapper {
+        width: 100%;
+      }
+      .selectric .button {
+        background-color: $primaryColor;
+        width: 31px;
+        // filter: invert(1);
+        &::after {
+          background-image: url(../../images/icons/bottom-direction-white.svg);
+          background-size: 12px;
+          transform: none;
+        }
+      }
+      .selectric-open {
+        .selectric .button {
+
+        }
+      }
+    }
   }
 }

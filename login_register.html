@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
@@ -5,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>登入頁面</title>
+  <title>註冊</title>
   <link rel="stylesheet" href="./style/login.css">
 </head>
 
@@ -28,38 +29,46 @@
     </div>
   </header>
   <!-- .header end -->
-  <main class="login">
+  <main class="login login__register">
     <section class="loginBox">
-      <h2 class="login__mainTitle">登入</h2>
+      <div class="login__register__status"><p>請確認填妥註冊資料</p><img src="./images/icons/status-error.svg" alt="error"></div>
+      <h2 class="login__mainTitle">註冊</h2>
       <form action="" class="login__form">
         <section class="login__inputGroup">
           <input type="email" placeholder="請輸入您的E-Mail" class="login__input login__email" autocomplete="off">
+          <input type="text" placeholder="店名、公司團體、藝名姓名..." class="login__input login__email" autocomplete="off">
           <input type="password" placeholder="請輸入密碼" class="login__input login__password">
-        </section>
-        <section class="login__justifySpaceBetween">
-          <div class="login__rememberMe">
-            <input type="checkbox" name="" id="rememberMe" class="login__checkbox">
-            <label for="rememberMe" class="login__fakeCheckbox"></label>
-            <label for="rememberMe">記住我</label>
+          <div class="login__password__check">
+            <input type="password" placeholder="請再次輸入密碼" class="login__input login__password login__password__again"><span class="error"></span>
           </div>
-          <div><a href="#" class="">忘記密碼</a></div>
         </section>
+        <section class="login__selectGroup__register">
+            <div>
+              <select name="city-filter" id="city">
+                  <option value="所有城市" selected>縣市</option>
+                  <option value="台北市">台北市</option>
+                  <option value="新北市">新北市</option>
+                  <option value="宜蘭縣">宜蘭縣</option>
+                  <option value="基隆市">基隆市</option>
+                  <option value="桃園市">桃園市</option>
+                  <option value="新竹縣市">新竹縣市</option>
+                  <option value="苗栗市">苗栗市</option>
+                </select>
+            </div>
+            <div>
+              <select name="city-filter" id="city">
+                  <option value="所有城市" selected>地區</option>
+                  <option value="大安區">大安區</option>
+                </select>
+            </div>
+          </section>
         <div>
-          <button type="submit" class="button button__login button__login__submit">登入</button>
-          <button class="button button__login button__login__facebook"><img src="./images/icons/facebook-logo-white.svg"
-              alt="Facebook Login"> 使用Facebook帳號登入</button>
+          <button type="submit" class="button button__login button__login__submit">註冊</button>
         </div>
-        <p class="login__seperator">-或-</p>
         <div>
-          <h3><a href="#">新用戶？</a></h3>
-          <button class="button button__login button__login__submit">註冊</button>
           <p class="login__agreement">註冊登入即表示您同意我們的<a href="#">隱私政策</a>及<a href="#">服務條款</a></p>
         </div>
       </form>
-    </section>
-    <section class="loginBox login__memo">
-      <h4>貼心小叮嚀</h4>
-      <p>註冊成為會員，系統將可儲存您的使用紀錄，您也能使用刊登功能。</p>
     </section>
     <footer class="footer__login">
       <div>

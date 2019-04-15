@@ -565,11 +565,13 @@ input:-webkit-autofill:active {
   min-height: 100vh;
   padding-top: 95px; }
   .login__forgotPassword .loginBox {
-    padding: 20px 56px 50px; }
+    padding: 20px 56px 50px;
+    margin-top: 105px; }
     @media all and (max-width: 576px) {
       .login__forgotPassword .loginBox {
         max-width: 290px;
-        padding: 20px 11px; } }
+        padding: 20px 11px;
+        margin-top: 0; } }
   .login__forgotPassword--sent .loginBox {
     padding: 20px 56px; }
     @media all and (max-width: 576px) {
@@ -597,11 +599,6 @@ input:-webkit-autofill:active {
     width: 70%;
     margin: auto;
     word-break: break-all; }
-  .login__forgotPassword--sent .status--success ~ .login__forgotPassword__message {
-    padding: 24px 0; }
-  .login__forgotPassword--sent .status--error ~ .login__forgotPassword__message {
-    padding: 34px 0 35px;
-    text-align: center; }
   .login__forgotPassword .footer__login {
     margin-top: 240px; }
   .login__forgotPassword .login__forgotPassword__input {
@@ -617,11 +614,59 @@ input:-webkit-autofill:active {
     margin-bottom: 35px; }
     .login__forgotPassword .login__forgotPassword__input p {
       font-size: 14px; }
+  .login__register .loginBox {
+    margin-top: 60px; }
+  .login__register .footer__login {
+    margin-top: 182px; }
+  .login__register .login__register__status {
+    display: none; }
+  .login__register .login__agreement {
+    margin-top: 43px; }
+  .login .status--success ~ .login__forgotPassword__message {
+    padding: 24px 0; }
+  .login .status--error ~ .login__forgotPassword__message {
+    padding: 34px 0 35px;
+    text-align: center; }
+  .login .status--error .login__register__status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffd8d8;
+    color: #d6191e;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 6px 0;
+    position: absolute;
+    top: -42px;
+    left: 0;
+    width: 100%; }
+    .login .status--error .login__register__status img {
+      margin-left: 4px; }
+  .login .status--error .login__password__again {
+    position: relative; }
+    .login .status--error .login__password__again::-webkit-input-placeholder {
+      color: #d6191e; }
+    .login .status--error .login__password__again:-ms-input-placeholder {
+      color: #d6191e; }
+    .login .status--error .login__password__again::-ms-input-placeholder {
+      color: #d6191e; }
+    .login .status--error .login__password__again::placeholder {
+      color: #d6191e; }
+    .login .status--error .login__password__again ~ .error {
+      background: url(../../images/icons/status-error.svg) no-repeat;
+      width: 16px;
+      display: inline-block;
+      height: 16px;
+      position: absolute;
+      right: 11px;
+      top: 13px; }
   .login a {
     color: #02bad3; }
   .login :placeholder {
     color: #b1b1b1; }
   .loginBox {
+    position: relative;
     background-color: #f6f6f6;
     max-width: 424px;
     padding: 20px 56px;
@@ -679,10 +724,13 @@ input:-webkit-autofill:active {
   .login__email {
     letter-spacing: 1px; }
   .login__password {
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: .1em; }
     .login__password:placeholder-shown {
       font-size: 14px; }
+    .login__password__check {
+      position: relative;
+      margin-top: 10px; }
   .login__rememberMe {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -747,7 +795,7 @@ input:-webkit-autofill:active {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin-bottom: 50px; }
+    margin-bottom: 52px; }
   .login__selectGroup > div + div {
     margin-top: 20px; }
   .login__selectGroup__icon {
@@ -770,19 +818,44 @@ input:-webkit-autofill:active {
     -webkit-box-shadow: none;
     box-shadow: none; }
   .login__selectGroup .selectric-open .selectric {
-    background: #ffffff;
+    background-color: #ffffff;
     border-radius: 2px;
     -webkit-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
     border-radius: 2px 2px 0 0; }
     .login__selectGroup .selectric-open .selectric .button {
-      background: #ffffff; }
+      background-color: #ffffff; }
   .login__selectGroup .selectric-open .selectric-items {
     z-index: 1;
     margin-top: -3px;
     -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     border-radius: 0 0 2px 2px; }
+  .login__selectGroup__register {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 45px; }
+    .login__selectGroup__register > div {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+      .login__selectGroup__register > div:first-child {
+        margin-right: 7px; }
+    .login__selectGroup__register .selectric-wrapper {
+      width: 100%; }
+    .login__selectGroup__register .selectric .button {
+      background-color: #02bad3;
+      width: 31px; }
+      .login__selectGroup__register .selectric .button::after {
+        background-image: url(../../images/icons/bottom-direction-white.svg);
+        background-size: 12px;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none; }
 
 .footer {
   background: #f4f4f4;
