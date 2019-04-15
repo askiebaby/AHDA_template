@@ -1670,7 +1670,8 @@ input:-webkit-autofill:active {
 
 .selectric-open {
   z-index: 9999; }
-  .selectric-open .selectric-items {
+  .selectric-open git
+  .selectric-items {
     display: block; }
 
 .selectric-disabled {
