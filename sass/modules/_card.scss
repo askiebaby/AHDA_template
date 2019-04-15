@@ -24,6 +24,7 @@
     max-width: 340px;
     margin-left: 18px;
     margin-bottom: 35px;
+    flex-grow: 1;
     @include mediaquery_customized-1095px {
       margin-left: 0;
     }
@@ -42,7 +43,10 @@
     }
     
     &__photo {
+      position: relative;
       font-size: 0;
+      max-height: 170px;
+      min-height: 170px;
       img {
         border-radius: 7px 7px 0 0;
       }
@@ -114,6 +118,18 @@
         background: url(../../images/icons/star.svg) no-repeat left center;
         background-size: 12px;
         max-width: 33.33333%;
+      }
+    }
+    &__more {
+      .card__photo {
+        background-color: $primaryColor;
+        border-radius: 7px 7px 0 0;
+        img {
+          position: absolute;
+          left: 2%;
+          bottom: 0;
+          height: 97%;
+        }
       }
     }
   }
