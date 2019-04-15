@@ -60,6 +60,9 @@
   &__register {
     .loginBox {
       margin-top: 60px;
+      @include mediaquery_phone {
+        margin-top: 20px;
+      }
     }
     .footer__login {
       margin-top: 182px;
@@ -189,7 +192,7 @@
       width: 65%;
     }
   }
-  &__email {
+  &__email, &__text {
     letter-spacing: 1px;
   }
   &__password {

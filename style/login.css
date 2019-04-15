@@ -616,6 +616,9 @@ input:-webkit-autofill:active {
       font-size: 14px; }
   .login__register .loginBox {
     margin-top: 60px; }
+    @media all and (max-width: 576px) {
+      .login__register .loginBox {
+        margin-top: 20px; } }
   .login__register .footer__login {
     margin-top: 182px; }
   .login__register .login__register__status {
@@ -721,7 +724,7 @@ input:-webkit-autofill:active {
     @media all and (max-width: 576px) {
       .login__testCode {
         width: 65%; } }
-  .login__email {
+  .login__email, .login__text {
     letter-spacing: 1px; }
   .login__password {
     font-size: 1.5em;
