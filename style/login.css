@@ -657,7 +657,7 @@ input:-webkit-autofill:active {
     .login .status--error .login__password__again::placeholder {
       color: #d6191e; }
     .login .status--error .login__password__again ~ .error {
-      background: url(./images/icons/status-error.svg) no-repeat;
+      background: url(../images/icons/status-error.svg) no-repeat;
       width: 16px;
       display: inline-block;
       height: 16px;
@@ -854,7 +854,7 @@ input:-webkit-autofill:active {
       background-color: #02bad3;
       width: 31px; }
       .login__selectGroup__register .selectric .button::after {
-        background-image: url(./images/icons/bottom-direction-white.svg);
+        background-image: url(../images/icons/bottom-direction-white.svg);
         background-size: 12px;
         -webkit-transform: none;
         -ms-transform: none;

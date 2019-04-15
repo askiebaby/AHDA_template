@@ -603,13 +603,13 @@ input:-webkit-autofill:active {
             margin-right: 3px;
             vertical-align: middle; }
       .cards .card__content__date {
-        background: url(./images/icons/calendar.svg) no-repeat left center;
+        background: url(../images/icons/calendar.svg) no-repeat left center;
         background-size: 11px; }
       .cards .card__content__country {
-        background: url(./images/icons/mark-solid.svg) no-repeat left center;
+        background: url(../images/icons/mark-solid.svg) no-repeat left center;
         background-size: 10px; }
       .cards .card__content__location {
-        background: url(./images/icons/star.svg) no-repeat left center;
+        background: url(../images/icons/star.svg) no-repeat left center;
         background-size: 12px;
         max-width: 33.33333%; }
     .cards .card__more .card__photo {

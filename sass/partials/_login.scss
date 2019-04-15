@@ -105,8 +105,7 @@
           color: $alertFontColor;
         }
         ~ .error {
-          // background: url(../../images/icons/status-error.svg) no-repeat;
-          background: url(./images/icons/status-error.svg) no-repeat;
+          background: url(../images/icons/status-error.svg) no-repeat;
           width: 16px;
           display: inline-block;
           height: 16px;
@@ -329,8 +328,7 @@
         background-color: $primaryColor;
         width: 31px;
         &::after {
-          // background-image: url(../../images/icons/bottom-direction-white.svg);
-          background-image: url(./images/icons/bottom-direction-white.svg);
+          background-image: url(../images/icons/bottom-direction-white.svg);
           background-size: 12px;
           transform: none;
         }
