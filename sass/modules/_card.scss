@@ -106,19 +106,19 @@
       }
       &__date {
         // background: url(../../images/icons/calendar.svg) no-repeat left center; // for sass compiler
-        background: url(./images/icons/calendar.svg) no-repeat left center; // for github pages
+        background: url(../images/icons/calendar.svg) no-repeat left center; // for github pages
         background-size: 11px;
       }
 
       &__country {
         // background: url(../../images/icons/mark-solid.svg) no-repeat left center; // for sass compiler
-        background: url(./images/icons/mark-solid.svg) no-repeat left center;
+        background: url(../images/icons/mark-solid.svg) no-repeat left center;
         background-size: 10px;
       }
 
       &__location {
         // background: url(../../images/icons/star.svg) no-repeat left center; // for sass compiler
-        background: url(./images/icons/star.svg) no-repeat left center; // for github pages
+        background: url(../images/icons/star.svg) no-repeat left center; // for github pages
         background-size: 12px;
         max-width: 33.33333%;
       }

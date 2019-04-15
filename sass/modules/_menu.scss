@@ -94,11 +94,11 @@
 
     &__event {
       // background: url(../../images/icons/hot-event-blue.svg) no-repeat center bottom 38px transparent;
-      background: url(./images/icons/hot-event-blue.svg) no-repeat center bottom 38px transparent;
+      background: url(../images/icons/hot-event-blue.svg) no-repeat center bottom 38px transparent;
       background-size: 22px;
       &:hover{
         // background: url(../../images/icons/hot-event-white.svg) no-repeat center bottom 38px $primaryColor;
-        background: url(./images/icons/hot-event-white.svg) no-repeat center bottom 38px $primaryColor;
+        background: url(../images/icons/hot-event-white.svg) no-repeat center bottom 38px $primaryColor;
         background-size: 22px;
         @include mediaquery_customized-800px {
           background-position-y: 7px;
@@ -111,7 +111,7 @@
     }
     &__charity {
       // background: url(../../images/icons/charity-blue.svg) no-repeat center bottom 37px transparent;
-      background: url(./images/icons/charity-blue.svg) no-repeat center bottom 37px transparent;
+      background: url(../images/icons/charity-blue.svg) no-repeat center bottom 37px transparent;
       background-size: 35px;
       &:hover{
         // background: url(../../images/icons/charity-white.svg) no-repeat center bottom 37px $primaryColor;
@@ -127,11 +127,11 @@
     }
     &__discount {
       // background: url(../../images/icons/discount-blue.svg) no-repeat center bottom 37px transparent;
-      background: url(./images/icons/discount-blue.svg) no-repeat center bottom 37px transparent;
+      background: url(../images/icons/discount-blue.svg) no-repeat center bottom 37px transparent;
       background-size: 35px;
       &:hover{
         // background: url(../../images/icons/discount-white.svg) no-repeat center bottom 37px $primaryColor;
-        background: url(./images/icons/discount-white.svg) no-repeat center bottom 37px $primaryColor;
+        background: url(../images/icons/discount-white.svg) no-repeat center bottom 37px $primaryColor;
         background-size: 35px;
         @include mediaquery_customized-800px {
           background-position-y: 10px;
@@ -143,11 +143,11 @@
     }
     &__fun {
       // background: url(../../images/icons/hot-air-balloon-blue.svg) no-repeat center bottom 36px transparent;
-      background: url(./images/icons/hot-air-balloon-blue.svg) no-repeat center bottom 36px transparent;
+      background: url(../images/icons/hot-air-balloon-blue.svg) no-repeat center bottom 36px transparent;
       background-size: 30px;
       &:hover{
         // background: url(../../images/icons/hot-air-ballon-white.svg) no-repeat center bottom 36px $primaryColor;
-        background: url(./images/icons/hot-air-ballon-white.svg) no-repeat center bottom 36px $primaryColor;
+        background: url(../images/icons/hot-air-ballon-white.svg) no-repeat center bottom 36px $primaryColor;
         background-size: 30px;
         @include mediaquery_customized-800px {
           background-position-y: 10px;
@@ -159,11 +159,11 @@
     }
     &__news {
       // background: url(../../images/icons/rocket-blue.svg) no-repeat center bottom 36px transparent;
-      background: url(./images/icons/rocket-blue.svg) no-repeat center bottom 36px transparent;
+      background: url(../images/icons/rocket-blue.svg) no-repeat center bottom 36px transparent;
       background-size: 35px;
       &:hover{
         // background: url(../../images/icons/rocket-white.svg) no-repeat center bottom 36px $primaryColor;
-        background: url(./images/icons/rocket-white.svg) no-repeat center bottom 36px $primaryColor;
+        background: url(../images/icons/rocket-white.svg) no-repeat center bottom 36px $primaryColor;
         background-size: 35px;
         @include mediaquery_customized-800px {
           background-position-y: 12px;
@@ -175,11 +175,11 @@
     }
     &__ordinary {
       // background: url(../../images/icons/person-blue.svg) no-repeat center bottom 37px transparent;
-      background: url(./images/icons/person-blue.svg) no-repeat center bottom 37px transparent;
+      background: url(../images/icons/person-blue.svg) no-repeat center bottom 37px transparent;
       background-size: 32px;
       &:hover{
         // background: url(../../images/icons/person-white.svg) no-repeat center bottom 37px $primaryColor;
-        background: url(./images/icons/person-white.svg) no-repeat center bottom 37px $primaryColor;
+        background: url(../images/icons/person-white.svg) no-repeat center bottom 37px $primaryColor;
         background-size: 32px;
         @include mediaquery_customized-800px {
           background-position-y: 9px;
@@ -191,11 +191,11 @@
     }
     &__family {
       // background: url(../../images/icons/infant-blue.svg) no-repeat center bottom 37px transparent;
-      background: url(./images/icons/infant-blue.svg) no-repeat center bottom 37px transparent;
+      background: url(../images/icons/infant-blue.svg) no-repeat center bottom 37px transparent;
       background-size: 36px;
       &:hover{
         // background: url(../../images/icons/infant-white.svg) no-repeat center bottom 37px $primaryColor;
-        background: url(./images/icons/infant-white.svg) no-repeat center bottom 37px $primaryColor;
+        background: url(../images/icons/infant-white.svg) no-repeat center bottom 37px $primaryColor;
         background-size: 36px;
         @include mediaquery_customized-800px {
           background-position-y: 12px;
@@ -207,11 +207,11 @@
     }
     &__art {
       // background: url(../../images/icons/guitar-blue.svg) no-repeat center bottom 37px transparent;
-      background: url(./images/icons/guitar-blue.svg) no-repeat center bottom 37px transparent;
+      background: url(../images/icons/guitar-blue.svg) no-repeat center bottom 37px transparent;
       background-size: 36px;
       &:hover{
         // background: url(../../images/icons/guitar-white.svg) no-repeat center bottom 37px $primaryColor;
-        background: url(./images/icons/guitar-white.svg) no-repeat center bottom 37px $primaryColor;
+        background: url(../images/icons/guitar-white.svg) no-repeat center bottom 37px $primaryColor;
         background-size: 36px;
         @include mediaquery_customized-800px {
           background-position-y: 10px;
@@ -223,11 +223,11 @@
     }
     &__fitness {
       // background: url(../../images/icons/fitness-blue.svg) no-repeat center bottom 40px transparent;
-      background: url(./images/icons/fitness-blue.svg) no-repeat center bottom 40px transparent;
+      background: url(../images/icons/fitness-blue.svg) no-repeat center bottom 40px transparent;
       background-size: 38px;
       &:hover{
         // background: url(../../images/icons/fitness-white.svg) no-repeat center bottom 40px $primaryColor;
-        background: url(./images/icons/fitness-white.svg) no-repeat center bottom 40px $primaryColor;
+        background: url(../images/icons/fitness-white.svg) no-repeat center bottom 40px $primaryColor;
         background-size: 38px;
         @include mediaquery_customized-800px {
           background-position-y: 10px;
@@ -239,11 +239,11 @@
     }
     &__food {
       // background: url(../../images/icons/food-blue.svg) no-repeat center bottom 36px transparent;
-      background: url(./images/icons/food-blue.svg) no-repeat center bottom 36px transparent;
+      background: url(../images/icons/food-blue.svg) no-repeat center bottom 36px transparent;
       background-size: 27px;
       &:hover{
         // background: url(../../images/icons/food-white.svg) no-repeat center bottom 36px $primaryColor;
-        background: url(./images/icons/food-white.svg) no-repeat center bottom 36px $primaryColor;
+        background: url(../images/icons/food-white.svg) no-repeat center bottom 36px $primaryColor;
         background-size: 27px;
         @include mediaquery_customized-800px {
           background-position-y: 10px;
