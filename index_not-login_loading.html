@@ -12,12 +12,18 @@
 <body>
   <header class="header">
     <div>
-      <div class="header__logo"><a href="/"><img src="./images/logo_3x.png" alt="AHDA Logo" title="AHDA Logo" /></a></div>
+      <div class="header__logo">
+        <a href="/">
+          <img src="./images/logo_3x.png" alt="AHDA Logo" title="AHDA Logo" class="header__logo__platform" />
+          <img src="./images/ahda-logo@3x.png" alt="AHDA Logo" title="AHDA Logo" class="header__logo__AHDA" />
+        </a>
+      </div>
       <div class="header__search"><span><input type="search" name="" id="" placeholder="2019屏東燈會"><button
             type="submit"><img src="./images/icons/search.svg" alt=""></button></span></div>
       <nav class="header__navbar">
-        <label class="header__navbar__mobile" for="menu"><img src="./images/icons/bar.svg" alt="Menu" title="Menu"></label>
-        <input type="checkbox" class="hiddenButton"id="menu"></input>
+        <label class="header__navbar__mobile" for="menu"><img src="./images/icons/bar.svg" alt="Menu"
+            title="Menu"></label>
+        <input type="checkbox" class="hiddenButton" id="menu"></input>
         <ul class="header__navbar__pc">
           <li><a href="#">刊登活動</a></li>
           <li><a href="#">登入</a></li>
@@ -83,7 +89,8 @@
       </div>
     </section>
     <section class="activity__list">
-      <div class="activity__status"><img class="activity__status__loadingSpin" src="./images/icons/spinner-of-dots.svg" /></div>
+      <div class="activity__status"><img class="activity__status__loadingSpin"
+          src="./images/icons/spinner-of-dots.svg" /></div>
     </section>
   </section>
   <section class="activity">
@@ -188,37 +195,48 @@
   <footer class="footer">
     <nav>
       <ul>
-        <li class="footer__logo"><a href="/"><img src="./images/logo_3x.png" alt="AHDA Logo" title="AHDA Logo" /></a></li>
+        <li class="footer__logo"><a href="/"><img src="./images/logo_3x.png" alt="AHDA Logo" title="AHDA Logo" /></a>
+        </li>
         <li><a href="#">關於我們</a></li>
         <li><a href="#">常見問題</a></li>
         <li><a href="#">服務條款</a></li>
         <div class="footer__mobileBreak">
           <li class="footer__news"><a href="#">最新消息</a>
             <ul class="footer__submenu">
-              <li><a href="#"><img src="./images/icons/facebook-logo.svg" alt="AHDA Facebook Fanpage" title="AHDA Facebook Fanpage"></a></li>
-              <li><a href="#"><img src="./images/icons/youtube-logo.svg" alt="AHDA Youtube Channel" title="AHDA Youtube Channel"></a></li>
+              <li><a href="#"><img src="./images/icons/facebook-logo.svg" alt="AHDA Facebook Fanpage"
+                    title="AHDA Facebook Fanpage"></a></li>
+              <li><a href="#"><img src="./images/icons/youtube-logo.svg" alt="AHDA Youtube Channel"
+                    title="AHDA Youtube Channel"></a></li>
             </ul>
           </li>
           <li class="footer__download">
             <a href="#">下載AHDA App</a>
             <ul class="footer__submenu">
-              <li class="footer__download__google"><a href="#"><img src="./images/footer/android-app@2x.png" alt="Download on Google Play" title="Download on Google Play"></a></li>
-              <li class="footer__download__apple"><a href="#"><img src="./images/footer/app-store@2x.png" alt="Download on App Store" title="Download on App Store"></a></li>
+              <li class="footer__download__google"><a href="#"><img src="./images/footer/android-app@2x.png"
+                    alt="Download on Google Play" title="Download on Google Play"></a></li>
+              <li class="footer__download__apple"><a href="#"><img src="./images/footer/app-store@2x.png"
+                    alt="Download on App Store" title="Download on App Store"></a></li>
             </ul>
           </li>
         </div>
         <li class="footer__customerService"><a href="#">AHDA客服中心</a>
           <ul class="footer__submenu">
-            <li>Email: <a href="mailto:service@ahda.com" target="_blank" >service@ahda.com</a><br>週一至週五 09:00-18:00</li>
+            <li>Email: <a href="mailto:service@ahda.com" target="_blank">service@ahda.com</a><br>週一至週五 09:00-18:00</li>
           </ul>
         </li>
       </ul>
     </nav>
-    <section class="footer__copyright"><div class="footer__copyright__corporate">OOOO股份有限公司</div> &copy; OOOO Inc. All Rights Reserved.</section>
+    <section class="footer__copyright">
+      <div class="footer__copyright__corporate">OOOO股份有限公司</div> &copy; OOOO Inc. All Rights Reserved.
+    </section>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jquery.selectric.js"></script>
-  <script>$(function(){$('select').selectric()})</script>
+  <script>
+    $(function () {
+      $('select').selectric()
+    })
+  </script>
 </body>
 
 </html>

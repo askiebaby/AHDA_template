@@ -23,14 +23,23 @@
   }
 
   &__logo {
-    display: flex;
-    align-items: flex-end;
-    flex-basis: 12.5%;
-    min-width: 190px;
     padding-left: 16px;
     font-size: 0;
-    img {
+    > a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-basis: 12.5%;
+      min-width: 190px;
+    }
+    &__platform {
       height: 41px;
+    }
+    &__AHDA {
+      height: 26px;
+    }
+    img + img {
+      margin-left: 3px;
     }
   }
   &__search {

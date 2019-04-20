@@ -365,19 +365,27 @@ input:-webkit-autofill:active {
     align-items: center;
     margin: auto; }
   .header__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    -ms-flex-preferred-size: 12.5%;
-    flex-basis: 12.5%;
-    min-width: 190px;
     padding-left: 16px;
     font-size: 0; }
-    .header__logo img {
+    .header__logo > a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-preferred-size: 12.5%;
+      flex-basis: 12.5%;
+      min-width: 190px; }
+    .header__logo__platform {
       height: 41px; }
+    .header__logo__AHDA {
+      height: 26px; }
+    .header__logo img + img {
+      margin-left: 3px; }
   .header__search {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
